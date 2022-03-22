@@ -1,0 +1,54 @@
+@import './base';
+
+#header-section {
+  background: $header-background-color;
+}
+
+header {
+  padding: 4em 10em;
+  background : {
+    image: url('../images/HeroBg.png');
+    repeat: no-repeat;
+  }
+  height: 800px;
+  object-fit: fill;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      list-style: none;
+      margin-right: 5em;
+      li {
+        margin-left: 2em;
+        font-family: $open-sans;
+        font-size: 0.87em;
+      }
+    }
+  }
+
+  #brand-logo {
+    font-size: 1.75em;
+    text-decoration: none;
+    font-family: 'Leckerli One', cursive;
+    color: $logo-color;
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  //   height: 700px;
+  img {
+    position: absolute;
+  }
+
+  .headphones {
+    left: 2em;
+    top: 50%;
+    -webkit-box-shadow: 5px 5px 15px 5px #000000;
+    box-shadow: 5px 5px 15px 5px #000000;
+  }
+}

@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Leckerli+One&family=Open+Sans:wght@300;400;500&family=Roboto:wght@100;300;400&display=swap");
+#header-section {
+  background: #e0e0e0;
+}
+
+header {
+  padding: 4em 10em;
+  background-image: url("../images/HeroBg.png");
+  background-repeat: no-repeat;
+  height: 800px;
+  object-fit: fill;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin-right: 5em;
+}
+header nav ul li {
+  margin-left: 2em;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.87em;
+}
+header #brand-logo {
+  font-size: 1.75em;
+  text-decoration: none;
+  font-family: "Leckerli One", cursive;
+  color: #e84c3d;
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.header-content img {
+  position: absolute;
+}
+.header-content .headphones {
+  left: 2em;
+  top: 50%;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
