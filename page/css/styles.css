@@ -1,14 +1,49 @@
 @import url("https://fonts.googleapis.com/css2?family=Leckerli+One&family=Open+Sans:wght@300;400;500&family=Roboto:wght@100;300;400&display=swap");
 #header-section {
   background: #e0e0e0;
+  position: relative;
+}
+#header-section .centered-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Open Sans", sans-serif;
+  color: #333b46;
+  text-align: center;
+  z-index: 1;
+}
+#header-section .centered-text h1 {
+  font-size: 2.1875em;
+  letter-spacing: 2px;
+}
+#header-section .centered-text h4 {
+  font-size: 1em;
+  font-weight: 300;
+  letter-spacing: 5px;
+}
+#header-section .scroll-box {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  align-items: center;
+  bottom: 7.5em;
+  left: 50%;
+}
+#header-section .scroll-box span {
+  margin-top: 1em;
+  font-size: 0.75em;
+  color: #e84c3d;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
 }
 
 header {
-  padding: 4em 10em;
-  background-image: url("../images/HeroBg.png");
-  background-repeat: no-repeat;
-  height: 800px;
-  object-fit: fill;
+  width: 100%;
+  height: auto;
+  order: -1;
 }
 header nav {
   display: flex;
@@ -16,8 +51,10 @@ header nav {
 }
 header nav ul {
   display: flex;
+  align-items: center;
   list-style: none;
-  margin-right: 5em;
+  margin-right: 10.75em;
+  margin-top: 3.875em;
 }
 header nav ul li {
   margin-left: 2em;
@@ -29,6 +66,8 @@ header #brand-logo {
   text-decoration: none;
   font-family: "Leckerli One", cursive;
   color: #e84c3d;
+  margin-left: 6.25em;
+  margin-top: 3.25em;
 }
 
 .header-content {
@@ -36,13 +75,41 @@ header #brand-logo {
   justify-content: center;
   align-items: center;
   position: relative;
+  height: 50em;
+  width: 100%;
 }
 .header-content img {
   position: absolute;
 }
 .header-content .headphones {
-  left: 2em;
-  top: 50%;
-  -webkit-box-shadow: 5px 5px 15px 5px #000000;
-  box-shadow: 5px 5px 15px 5px #000000;
+  top: 9.75em;
+  left: 0;
+}
+.header-content .pen-holder {
+  right: 5em;
+  top: 29.31em;
+}
+.header-content .juice-glass {
+  top: 15.5em;
+  right: 10em;
+}
+.header-content .eye-glasses {
+  left: 12.37em;
+  top: 30em;
+}
+.header-content .pencil-1 {
+  left: 7.62em;
+  bottom: 6.56em;
+}
+.header-content .pencil-2 {
+  left: 4.25em;
+  bottom: 9.375em;
+}
+.header-content .mouse-img {
+  bottom: 2em;
+  right: 31.25em;
+}
+.header-content .icon-scroll {
+  margin-bottom: 1.5em;
+  position: relative;
 }
