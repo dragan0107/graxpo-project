@@ -119,3 +119,34 @@ header #brand-logo {
   margin-bottom: 1.5em;
   position: relative;
 }
+
+#about-us {
+  display: flex;
+  padding: 7.5em 10em;
+  background: #f3f3f3;
+}
+#about-us h3 {
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25em;
+  letter-spacing: 4.5px;
+}
+#about-us p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875em;
+  padding-right: 40%;
+}
+#about-us button {
+  height: 2.68em;
+  width: 10em;
+  background: #e84c3d;
+  border: none;
+  border-radius: 0.3em;
+  color: white;
+  margin-top: 2.5em;
+}
+#about-us .line {
+  height: 3px;
+  background: #333b46;
+  width: 46px;
+  margin: 1.5em 0 2em 0;
+}
