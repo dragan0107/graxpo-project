@@ -1,0 +1,43 @@
+#views {
+  background-image: url('/page/images/numSection.jpg');
+  background-size: cover;
+  height: 23em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: $roboto;
+
+  .views-card {
+    width: 12.5em;
+    margin: 1.5em;
+
+    .views-card-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 2em;
+
+      i {
+        font-size: 2.5em;
+        margin-right: 0.4em;
+      }
+    }
+
+    h2 {
+      font-size: 1.9em;
+      font-weight: 400;
+      letter-spacing: 2.1px;
+    }
+
+    .views-line {
+      background: white;
+      height: 2px;
+      width: 3em;
+      margin-top: 1.5em;
+    }
+
+    .views-desc {
+      font-weight: 300;
+    }
+  }
+}

@@ -207,6 +207,44 @@ header #brand-logo {
   padding: 3em 16em;
 }
 
+#views {
+  background-image: url("/page/images/numSection.jpg");
+  background-size: cover;
+  height: 23em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+#views .views-card {
+  width: 12.5em;
+  margin: 1.5em;
+}
+#views .views-card .views-card-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em;
+}
+#views .views-card .views-card-title i {
+  font-size: 2.5em;
+  margin-right: 0.4em;
+}
+#views .views-card h2 {
+  font-size: 1.9em;
+  font-weight: 400;
+  letter-spacing: 2.1px;
+}
+#views .views-card .views-line {
+  background: white;
+  height: 2px;
+  width: 3em;
+  margin-top: 1.5em;
+}
+#views .views-card .views-desc {
+  font-weight: 300;
+}
+
 .what-we-do-card {
   display: flex;
   justify-content: center;
