@@ -245,6 +245,72 @@ header #brand-logo {
   font-weight: 300;
 }
 
+#three-steps {
+  display: flex;
+  flex-direction: column;
+  padding: 6em;
+}
+#three-steps .three-steps-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#three-steps .three-steps-top h3 {
+  font-family: "Roboto", sans-serif;
+  color: #333b46;
+  margin-bottom: 1.3em;
+  letter-spacing: 5px;
+}
+#three-steps .three-steps-top .three-steps-line {
+  background: #81868e;
+  height: 3px;
+  width: 46px;
+  margin-bottom: 2em;
+}
+#three-steps .three-steps-top p {
+  font-family: "Open Sans", sans-serif;
+  color: #81868e;
+}
+#three-steps .three-steps-bottom {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2em;
+}
+#three-steps .three-steps-bottom .three-steps-card {
+  width: 18.75em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#three-steps .three-steps-bottom .three-steps-card h4 {
+  font-family: "Roboto", sans-serif;
+  color: #333b46;
+}
+#three-steps .three-steps-bottom .three-steps-card p {
+  font-family: "Open Sans", sans-serif;
+  color: #81868e;
+}
+#three-steps .three-steps-bottom .three-steps-card .three-step-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7em;
+  height: 7em;
+  background: #e6e6e6;
+  border-radius: 50%;
+  padding: 10px;
+  background-clip: content-box;
+  border: 1px solid #e6e6e6;
+}
+#three-steps .three-steps-bottom .three-steps-card .three-step-icon-box i {
+  font-size: 2em;
+  color: #e84c3d;
+}
+
 .what-we-do-card {
   display: flex;
   justify-content: center;

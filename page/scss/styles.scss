@@ -1,7 +1,11 @@
+// Base
 @import './base/base';
 
+// Sections
 @import './sections/header';
 @import './sections/about';
 @import './sections/views';
+@import './sections/three-steps';
 
-@import './components/card';
+// Components
+@import './components/whatwedo-card';
