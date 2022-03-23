@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Leckerli+One&family=Open+Sans:wght@300;400;500&family=Roboto:wght@100;300;400&display=swap');
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 //COLORS
 $header-background-color: rgb(224, 224, 224);
 $logo-color: #e84c3d;

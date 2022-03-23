@@ -1,0 +1,78 @@
+// Card component in the "What we do" section.
+
+.what-we-do-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33em;
+  height: 14.81em;
+  border: 3px solid rgb(235, 235, 235);
+  border-radius: 7px;
+  padding: 1.8em;
+  transition: 0.2s all ease-in-out;
+  margin: 1em;
+
+  &:hover {
+    background: $logo-color;
+    border-color: $logo-color;
+    cursor: pointer;
+    .what-card-right {
+      h4,
+      p {
+        color: white;
+      }
+    }
+    .icon-box {
+      transition: 0.2s all ease-in-out;
+      background-color: white;
+      i {
+        transition: 0.2s all ease-in-out;
+        color: $logo-color;
+      }
+    }
+  }
+
+  .what-card-left,
+  .what-card-right {
+    height: 100%;
+  }
+
+  .what-card-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 2em;
+    h4 {
+      font-size: 1em;
+      color: rgb(137, 137, 137);
+    }
+
+    p {
+      font-family: $open-sans;
+      line-height: 1.7em;
+      color: rgb(137, 137, 137);
+      font-size: 0.875em;
+    }
+
+    .what-we-do-line {
+      background: rgb(215, 215, 215);
+      height: 2px;
+      width: 31px;
+      margin: 1.5em 0;
+    }
+  }
+  .icon-box {
+    width: 6.75em;
+    height: 6.75em;
+    background-color: $logo-color;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    i {
+      font-size: 2.81em;
+      color: white;
+    }
+  }
+}

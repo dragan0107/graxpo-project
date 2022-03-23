@@ -1,0 +1,88 @@
+#about-us {
+  display: flex;
+  padding: 7.5em 15em;
+  background: $about-us-white;
+
+  h3 {
+    font-family: $roboto;
+    font-size: 1.25em;
+    letter-spacing: 4.5px;
+  }
+  p {
+    color: #81868e;
+    font-family: $open-sans;
+    font-size: 0.875em;
+    padding-right: 40%;
+    line-height: 2em;
+  }
+  button {
+    height: 2.68em;
+    width: 10em;
+    background: rgb(232, 76, 61);
+    border: none;
+    border-radius: 0.3em;
+    color: white;
+    margin-top: 2.5em;
+    font-family: $roboto;
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 1.4px;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background: rgb(252, 112, 100);
+    }
+  }
+  .line {
+    height: 3px;
+    background: rgb(137, 137, 137);
+    width: 46px;
+    margin: 1.5em 0 2em 0;
+  }
+}
+
+// What we do section
+
+#what-we-do {
+  display: flex;
+  flex-direction: column;
+  background: $about-us-white;
+  align-items: center;
+
+  h3 {
+    font-size: 1.25em;
+    letter-spacing: 5px;
+  }
+
+  h3,
+  h4 {
+    font-family: $roboto;
+  }
+
+  .what-we-do-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 35%;
+    p {
+      font-family: $open-sans;
+      font-size: 0.875em;
+      letter-spacing: 1px;
+    }
+    .line {
+      height: 3px;
+      background: rgb(137, 137, 137);
+      width: 46px;
+      margin: 1.5em 0 2em 0;
+    }
+  }
+
+  .what-we-do-bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 3em 16em;
+  }
+}

@@ -1,0 +1,131 @@
+#header-section {
+  background: $header-background-color;
+  position: relative;
+
+  .centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: $open-sans;
+    color: $dark-blue;
+    text-align: center;
+    z-index: 1;
+    h1 {
+      font-size: 2.1875em;
+      letter-spacing: 2px;
+      //   font-weight: 500;
+    }
+    h4 {
+      font-size: 1em;
+      font-weight: 300;
+      letter-spacing: 5px;
+    }
+  }
+  .scroll-box {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: auto;
+    align-items: center;
+    bottom: 5.2em;
+    left: 50%;
+    span {
+      margin-top: 1em;
+      font-size: 0.75em;
+      color: $logo-color;
+      font-family: $open-sans;
+      font-weight: 500;
+    }
+  }
+}
+
+header {
+  width: 100%;
+  height: auto;
+  order: -1;
+  nav {
+    display: flex;
+    justify-content: space-between;
+    ul {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin-right: 10.75em;
+      margin-top: 3.875em;
+      li {
+        margin-left: 2em;
+        font-family: $open-sans;
+        font-size: 0.87em;
+      }
+    }
+  }
+
+  #brand-logo {
+    font-size: 1.75em;
+    text-decoration: none;
+    font-family: 'Leckerli One', cursive;
+    color: $logo-color;
+    margin-left: 6.25em;
+    margin-top: 3.25em;
+  }
+}
+
+.header-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 50em;
+  width: 100%;
+
+  img {
+    position: absolute;
+  }
+
+  .headphones {
+    top: 9.75em;
+    left: 0;
+  }
+  .pen-holder {
+    right: 5em;
+    top: 29.31em;
+    z-index: 1;
+  }
+
+  .juice-glass {
+    top: 15em;
+    right: 10em;
+    z-index: 1;
+  }
+
+  .cork {
+    top: 15.5em;
+    right: 10em;
+  }
+
+  .eye-glasses {
+    left: 12.37em;
+    top: 30em;
+  }
+
+  .pencil-1 {
+    left: 7.62em;
+    bottom: 6.56em;
+  }
+  .pencil-2 {
+    left: 5em;
+    bottom: 6.9em;
+  }
+
+  .mouse-img {
+    bottom: 3em;
+    right: 24em;
+  }
+
+  .icon-scroll {
+    margin-bottom: 1.5em;
+    position: relative;
+  }
+}
