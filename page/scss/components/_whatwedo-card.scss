@@ -1,9 +1,7 @@
 // Card component in the "What we do" section.
 
 .what-we-do-card {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center-all;
   width: 33em;
   height: 14.81em;
   border: 3px solid rgb(235, 235, 235);

@@ -1,0 +1,35 @@
+#create-business {
+  @include flex-center-all($direction: column);
+  background-image: url('/page/images/buildings.png');
+  background-size: cover;
+  height: 24.5em;
+  color: white;
+  font-family: $roboto;
+
+  h1 {
+    font-size: 1.85em;
+    margin-bottom: 1em;
+    letter-spacing: 8px;
+  }
+
+  h1,
+  h4 {
+    font-weight: 300;
+  }
+
+  h4 {
+    font-size: 1.25em;
+    margin-bottom: 2em;
+    letter-spacing: 5px;
+  }
+
+  button {
+    width: 11em;
+    height: 3em;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background: $logo-color;
+    cursor: pointer;
+  }
+}

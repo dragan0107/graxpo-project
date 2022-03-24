@@ -1,0 +1,28 @@
+#best-service {
+  @include flex-center-all($direction: column);
+  background: $lightest-grey;
+  padding-top: 6em;
+}
+
+.best-service-images {
+  @include flex-justify-center($direction: column);
+  margin-top: 4.2em;
+  background: $logo-color;
+  color: white;
+  width: 100%;
+
+  .best-service-box {
+    @include flex-align-center;
+    justify-content: space-between;
+  }
+
+  .best-service-desc {
+    max-width: 55%;
+  }
+
+  .service-box-right {
+    flex-direction: row-reverse;
+    margin: 0;
+    padding-left: 6.1em;
+  }
+}
