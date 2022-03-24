@@ -8,29 +8,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    h3 {
-      font-family: $roboto;
-      color: #333b46;
-      margin-bottom: 1.3em;
-      letter-spacing: 5px;
-    }
-    .three-steps-line {
-      background: #81868e;
-      height: 3px;
-      width: 46px;
-      margin-bottom: 2em;
-    }
-    p {
-      font-family: $open-sans;
-      color: #81868e;
-    }
   }
 
   .three-steps-bottom {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 2em;
+    margin-top: 3.8em;
 
     .three-steps-card {
       width: 18.75em;
@@ -43,10 +27,13 @@
       h4 {
         font-family: $roboto;
         color: #333b46;
+        margin-bottom: 2em;
+        letter-spacing: 2px;
       }
       p {
         font-family: $open-sans;
         color: #81868e;
+        letter-spacing: 0.8px;
       }
 
       .three-step-icon-box {
@@ -60,6 +47,18 @@
         padding: 10px;
         background-clip: content-box;
         border: 1px solid #e6e6e6;
+        margin-bottom: 2em;
+        position: relative;
+
+        // .three-step-line {
+        //   position: absolute;
+        //   right: -100%;
+        //   top: 50%;
+        //   height: 2px;
+        //   background: black;
+        //   width: 700px;
+        //   z-index: -1;
+        // }
 
         i {
           font-size: 2em;

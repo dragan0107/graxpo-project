@@ -60,7 +60,7 @@ header nav ul {
   align-items: center;
   list-style: none;
   margin-right: 10.75em;
-  margin-top: 3.875em;
+  margin-top: 5.4em;
 }
 header nav ul li {
   margin-left: 2em;
@@ -174,11 +174,6 @@ header #brand-logo {
   background: #f3f3f3;
   align-items: center;
 }
-#what-we-do h3 {
-  font-size: 1.25em;
-  letter-spacing: 5px;
-}
-#what-we-do h3,
 #what-we-do h4 {
   font-family: "Roboto", sans-serif;
 }
@@ -187,18 +182,6 @@ header #brand-logo {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  width: 35%;
-}
-#what-we-do .what-we-do-top p {
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.875em;
-  letter-spacing: 1px;
-}
-#what-we-do .what-we-do-top .line {
-  height: 3px;
-  background: #898989;
-  width: 46px;
-  margin: 1.5em 0 2em 0;
 }
 #what-we-do .what-we-do-bottom {
   display: flex;
@@ -256,27 +239,11 @@ header #brand-logo {
   justify-content: center;
   align-items: center;
 }
-#three-steps .three-steps-top h3 {
-  font-family: "Roboto", sans-serif;
-  color: #333b46;
-  margin-bottom: 1.3em;
-  letter-spacing: 5px;
-}
-#three-steps .three-steps-top .three-steps-line {
-  background: #81868e;
-  height: 3px;
-  width: 46px;
-  margin-bottom: 2em;
-}
-#three-steps .three-steps-top p {
-  font-family: "Open Sans", sans-serif;
-  color: #81868e;
-}
 #three-steps .three-steps-bottom {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 2em;
+  margin-top: 3.8em;
 }
 #three-steps .three-steps-bottom .three-steps-card {
   width: 18.75em;
@@ -289,10 +256,13 @@ header #brand-logo {
 #three-steps .three-steps-bottom .three-steps-card h4 {
   font-family: "Roboto", sans-serif;
   color: #333b46;
+  margin-bottom: 2em;
+  letter-spacing: 2px;
 }
 #three-steps .three-steps-bottom .three-steps-card p {
   font-family: "Open Sans", sans-serif;
   color: #81868e;
+  letter-spacing: 0.8px;
 }
 #three-steps .three-steps-bottom .three-steps-card .three-step-icon-box {
   display: flex;
@@ -305,6 +275,8 @@ header #brand-logo {
   padding: 10px;
   background-clip: content-box;
   border: 1px solid #e6e6e6;
+  margin-bottom: 2em;
+  position: relative;
 }
 #three-steps .three-steps-bottom .three-steps-card .three-step-icon-box i {
   font-size: 2em;
@@ -379,4 +351,28 @@ header #brand-logo {
 .what-we-do-card .icon-box i {
   font-size: 2.81em;
   color: white;
+}
+
+.section-desc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.section-desc .section-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.875em;
+  letter-spacing: 1px;
+  width: 60%;
+}
+.section-desc .section-title {
+  font-size: 1.25em;
+  letter-spacing: 5px;
+  font-family: "Roboto", sans-serif;
+}
+.section-desc .section-line {
+  height: 3px;
+  background: #898989;
+  width: 46px;
+  margin: 1.5em 0 2em 0;
 }
