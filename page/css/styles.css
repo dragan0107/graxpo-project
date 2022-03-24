@@ -409,6 +409,27 @@ header #brand-logo {
   cursor: pointer;
 }
 
+#portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6em;
+  background: #ececec;
+}
+#portfolio .portfolio-categories {
+  width: 30%;
+  margin-top: 5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: "Open Sans", sans-serif;
+}
+#portfolio .portfolio-categories .portfolio-categ-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
 .what-we-do-card {
   display: flex;
   justify-content: center;
