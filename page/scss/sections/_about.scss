@@ -45,25 +45,20 @@
 // What we do section
 
 #what-we-do {
-  display: flex;
-  flex-direction: column;
+  @include flex-align-center($direction: column);
   background: $about-us-white;
-  align-items: center;
 
   h4 {
     font-family: $roboto;
   }
 
   .what-we-do-top {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    @include flex-center-all;
     text-align: center;
   }
 
   .what-we-do-bottom {
-    display: flex;
-    justify-content: center;
+    @include flex-justify-center;
     flex-wrap: wrap;
     padding: 3em 16em;
   }

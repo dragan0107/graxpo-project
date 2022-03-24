@@ -4,24 +4,17 @@
   padding: 6em;
 
   .three-steps-top {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-center-all($direction: column);
   }
 
   .three-steps-bottom {
-    display: flex;
+    @include flex-align-center;
     justify-content: space-around;
-    align-items: center;
     margin-top: 3.8em;
 
     .three-steps-card {
+      @include flex-center-all($direction: column);
       width: 18.75em;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
       text-align: center;
 
       h4 {
@@ -37,9 +30,7 @@
       }
 
       .three-step-icon-box {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center-all;
         width: 7em;
         height: 7em;
         background: #e6e6e6;

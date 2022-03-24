@@ -23,12 +23,10 @@
     }
   }
   .scroll-box {
+    @include flex-align-center($direction: column);
     position: absolute;
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
     height: auto;
-    align-items: center;
     bottom: 5.2em;
     left: 50%;
     span {
@@ -49,8 +47,7 @@ header {
     display: flex;
     justify-content: space-between;
     ul {
-      display: flex;
-      align-items: center;
+      @include flex-align-center;
       list-style: none;
       margin-right: 10.75em;
       margin-top: 5.4em;
@@ -73,9 +70,7 @@ header {
 }
 
 .header-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center-all;
   position: relative;
   height: 50em;
   width: 100%;

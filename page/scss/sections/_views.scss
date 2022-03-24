@@ -1,10 +1,8 @@
 #views {
+  @include flex-center-all;
   background-image: url('/page/images/numSection.jpg');
   background-size: cover;
   height: 23em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   color: white;
   font-family: $roboto;
 
@@ -13,8 +11,7 @@
     margin: 1.5em;
 
     .views-card-title {
-      display: flex;
-      align-items: center;
+      @include flex-align-center;
       margin-bottom: 2em;
 
       i {

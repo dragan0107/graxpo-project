@@ -1,0 +1,33 @@
+#featured-work {
+  @include flex-align-center($direction: column);
+  background: $lightest-grey;
+  padding-top: 6em;
+
+  .featured-work-bottom {
+    margin-top: 4.2em;
+    display: flex;
+    .featured-card {
+      position: relative;
+    }
+
+    .detail-btn {
+      width: 156px;
+      height: 40px;
+      border: 1px solid white;
+      border-radius: 10px;
+      background: none;
+      color: white;
+    }
+    .featured-hover-box {
+      @include flex-center-all;
+      width: 435px;
+      height: 297px;
+      background-color: red;
+      opacity: 0.5;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+}
