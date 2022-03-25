@@ -553,6 +553,57 @@ header #brand-logo {
   width: 34px;
 }
 
+#subscribe {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  background: no-repeat url("/page/images/subscribeBG.png");
+  background-size: cover;
+  height: 19.125em;
+}
+#subscribe .subscribe-desc {
+  width: 45%;
+  color: white;
+}
+#subscribe .subscribe-desc .subscribe-text {
+  line-height: 2em;
+  font-weight: 300;
+}
+#subscribe .subscribe-desc .subscribe-line {
+  width: 57px;
+  height: 2px;
+}
+#subscribe .subscribe-input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Open Sans", sans-serif;
+}
+#subscribe .subscribe-input .subscribe-button,
+#subscribe .subscribe-input .subscribe-input-box {
+  outline: none;
+  background: none;
+  padding: 1.2em;
+  color: white;
+  font-size: 0.875em;
+  border: 1px solid white;
+}
+#subscribe .subscribe-input .subscribe-input-box {
+  outline: none;
+  background: none;
+  width: 274px;
+}
+#subscribe .subscribe-input ::placeholder {
+  color: white;
+}
+#subscribe .subscribe-input .subscribe-button {
+  width: 8.18em;
+  color: white;
+  border-left: none;
+}
+
 .what-we-do-card {
   display: flex;
   justify-content: center;
@@ -647,7 +698,8 @@ header #brand-logo {
   width: 46px;
   margin: 1.5em 0 2em 0;
 }
-.section-desc .white-line {
+
+.white-line {
   height: 3px;
   background: white;
   width: 46px;

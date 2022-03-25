@@ -1,0 +1,50 @@
+#subscribe {
+  @include flex-center-all;
+  background: no-repeat url('/page/images/subscribeBG.png');
+  background-size: cover;
+  height: 19.125em;
+
+  .subscribe-desc {
+    width: 45%;
+    color: white;
+
+    .subscribe-text {
+      line-height: 2em;
+      font-weight: 300;
+    }
+
+    .subscribe-line {
+      width: 57px;
+      height: 2px;
+    }
+  }
+
+  .subscribe-input {
+    @include flex-center-all;
+    font-family: $open-sans;
+
+    .subscribe-button,
+    .subscribe-input-box {
+      outline: none;
+      background: none;
+      padding: 1.2em;
+      color: white;
+      font-size: 0.875em;
+      border: 1px solid white;
+    }
+    .subscribe-input-box {
+      outline: none;
+      background: none;
+      width: 274px;
+    }
+    ::placeholder {
+      color: white;
+    }
+
+    .subscribe-button {
+      width: 8.18em;
+      color: white;
+      border-left: none;
+    }
+  }
+}
