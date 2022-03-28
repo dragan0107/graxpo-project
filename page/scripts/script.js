@@ -27,7 +27,7 @@ function startInterval() {
     if (autoSlide > 3) autoSlide = 1;
     setSlide(autoSlide);
     autoSlide++;
-  }, 2000);
+  }, 3000);
 }
 function selectSlide(n) {
   setSlide(n);

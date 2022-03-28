@@ -32,7 +32,8 @@
       padding: 1em;
       text-align: center;
       opacity: 0;
-      transition: all 0.2s ease-in-out;
+      @include smooth-transition;
+
       &:hover {
         opacity: 1;
       }

@@ -157,7 +157,6 @@ header #brand-logo {
   font-weight: 300;
   font-size: 1em;
   letter-spacing: 1.4px;
-  transition: all 0.2s ease-in-out;
 }
 #about-us button:hover {
   cursor: pointer;
@@ -315,7 +314,7 @@ header #brand-logo {
   background: none;
   color: white;
   opacity: 1;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 #featured-work .featured-work-cards .detail-btn:hover {
   cursor: pointer;
@@ -602,6 +601,7 @@ header #brand-logo {
   width: 8.18em;
   color: white;
   border-left: none;
+  cursor: pointer;
 }
 
 #meet-crew {
@@ -770,6 +770,158 @@ header #brand-logo {
     opacity: 1;
   }
 }
+#testimonials .testimonials-second-img {
+  width: 161px;
+  height: 154px;
+}
+
+#latest-blog {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ececec;
+  padding-top: 6.75em;
+}
+#latest-blog .blog-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5.35em;
+}
+#latest-blog .blog-cards .blog-card {
+  background: url("/page/images/latest-blog/blog2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 390px;
+  width: 570px;
+  position: relative;
+  margin: 1em;
+}
+#latest-blog .blog-cards .blog-card2 {
+  background: url("/page/images/latest-blog/blog1.png");
+}
+#latest-blog .blog-cards .blog-card-desc {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-content: flex-start;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: #e84c3d;
+  color: white;
+  padding: 1em;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+#latest-blog .blog-cards .blog-card-desc:hover {
+  opacity: 1;
+}
+#latest-blog .blog-cards .blog-card-about {
+  font-family: "Roboto", sans-serif;
+}
+#latest-blog .blog-cards .blog-card-about h1 {
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+#latest-blog .blog-cards .blog-card-about p {
+  font-size: 0.875em;
+  font-weight: 300;
+  margin-top: 0.7em;
+}
+#latest-blog .blog-cards .blog-card-about .blog-card-line {
+  border: none;
+  height: 3px;
+  width: 46px;
+  background: white;
+  margin: 1.5em 0 2em 0;
+}
+#latest-blog .blog-cards .blog-card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+#latest-blog .blog-cards .blog-card-date-box {
+  margin-top: 1.4em;
+}
+
+#pricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #ececec;
+  padding-top: 6.75em;
+  color: #81868e;
+}
+#pricing .pricing-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 3.5em;
+}
+#pricing .pricing-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 482px;
+  width: 323px;
+  border: 1px solid #d7d7d7;
+  border-radius: 10px;
+  transition: all 0.2s ease-in-out;
+  margin: 1.8em;
+}
+#pricing .pricing-card h4 {
+  font-family: "Roboto", sans-serif;
+}
+#pricing .pricing-card span,
+#pricing .pricing-card h4,
+#pricing .pricing-card .pricing-button-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  border-bottom: 1px solid #d7d7d7;
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+}
+#pricing .pricing-card span {
+  flex: 1;
+}
+#pricing .pricing-card span i {
+  font-size: 1.25em;
+}
+#pricing .pricing-card .pricing-unlimited {
+  font-size: 0.81em;
+}
+#pricing .pricing-card h4,
+#pricing .pricing-card .pricing-button-box {
+  flex: 2;
+}
+#pricing .pricing-card .pricing-signup-btn {
+  border: 1px solid #d7d7d7;
+  padding: 11px;
+  width: 118px;
+  border-radius: 5px;
+  color: black;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+#pricing .pricing-card .pricing-signup-btn:hover {
+  border: none;
+  background: #e84c3d;
+  color: white;
+}
+#pricing .pricing-card:hover {
+  box-shadow: 1px 5px 15px 9px #d4d4d4;
+}
 
 .what-we-do-card {
   display: flex;
@@ -781,7 +933,7 @@ header #brand-logo {
   border: 3px solid #ebebeb;
   border-radius: 7px;
   padding: 1.8em;
-  transition: 0.2s all ease-in-out;
+  transition: all 0.2s ease-in-out;
   margin: 1em;
 }
 .what-we-do-card:hover {
@@ -794,11 +946,11 @@ header #brand-logo {
   color: white;
 }
 .what-we-do-card:hover .icon-box {
-  transition: 0.2s all ease-in-out;
+  transition: all 0.2s ease-in-out;
   background-color: white;
 }
 .what-we-do-card:hover .icon-box i {
-  transition: 0.2s all ease-in-out;
+  transition: all 0.2s ease-in-out;
   color: #e84c3d;
 }
 .what-we-do-card .what-card-left,

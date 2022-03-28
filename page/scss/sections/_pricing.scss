@@ -1,0 +1,70 @@
+#pricing {
+  @include flex-center-all($direction: column);
+  background: $lightest-grey;
+  padding-top: 6.75em;
+  color: $header-light-grey;
+
+  .pricing-cards {
+    @include flex-center-all;
+    flex-wrap: wrap;
+    margin-top: 3.5em;
+  }
+
+  .pricing-card {
+    @include flex-center-all($direction: column);
+    height: 482px;
+    width: 323px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    @include smooth-transition;
+    margin: 1.8em;
+    h4 {
+      font-family: $roboto;
+    }
+
+    span,
+    h4,
+    .pricing-button-box {
+      @include flex-center-all;
+      border-bottom: 1px solid #d7d7d7;
+      width: 100%;
+      font-family: $open-sans;
+    }
+
+    span {
+      flex: 1;
+
+      i {
+        font-size: 1.25em;
+      }
+    }
+
+    .pricing-unlimited {
+      font-size: 0.81em;
+    }
+    h4,
+    .pricing-button-box {
+      flex: 2;
+    }
+
+    .pricing-signup-btn {
+      border: 1px solid #d7d7d7;
+      padding: 11px;
+      width: 118px;
+      border-radius: 5px;
+      color: black;
+      transition: all 0.2s ease-in;
+      cursor: pointer;
+
+      &:hover {
+        border: none;
+        background: $logo-color;
+        color: white;
+      }
+    }
+
+    &:hover {
+      box-shadow: 1px 5px 15px 9px #d4d4d4;
+    }
+  }
+}

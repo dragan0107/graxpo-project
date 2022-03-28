@@ -7,7 +7,7 @@
   border: 3px solid rgb(235, 235, 235);
   border-radius: 7px;
   padding: 1.8em;
-  transition: 0.2s all ease-in-out;
+  @include smooth-transition;
   margin: 1em;
 
   &:hover {
@@ -21,10 +21,11 @@
       }
     }
     .icon-box {
-      transition: 0.2s all ease-in-out;
+      @include smooth-transition;
+
       background-color: white;
       i {
-        transition: 0.2s all ease-in-out;
+        @include smooth-transition;
         color: $logo-color;
       }
     }
