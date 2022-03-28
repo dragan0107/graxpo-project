@@ -17,9 +17,6 @@
     letter-spacing: 5px;
   }
 
-  .testimonials-carousel {
-  }
-
   .testimonials-carousel-item {
     @include flex-center-all($direction: column);
     margin-top: 3em;

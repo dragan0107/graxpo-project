@@ -856,7 +856,6 @@ header #brand-logo {
   flex-direction: column;
   background: #ececec;
   padding-top: 6.75em;
-  color: #81868e;
 }
 #pricing .pricing-cards {
   display: flex;
@@ -865,6 +864,7 @@ header #brand-logo {
   flex-direction: row;
   flex-wrap: wrap;
   margin-top: 3.5em;
+  color: #81868e;
 }
 #pricing .pricing-card {
   display: flex;

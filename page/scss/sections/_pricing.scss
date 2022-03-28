@@ -2,12 +2,12 @@
   @include flex-center-all($direction: column);
   background: $lightest-grey;
   padding-top: 6.75em;
-  color: $header-light-grey;
 
   .pricing-cards {
     @include flex-center-all;
     flex-wrap: wrap;
     margin-top: 3.5em;
+    color: $header-light-grey;
   }
 
   .pricing-card {
