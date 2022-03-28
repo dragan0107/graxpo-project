@@ -5,6 +5,7 @@
   background-size: cover;
   height: 681px;
   padding: 5.625em;
+  transition: all 0.2s ease-in-out;
 
   .testimonials-desc {
     color: white;
@@ -61,5 +62,18 @@
   }
   .dot-active {
     background: $logo-color;
+  }
+  .fade-in {
+    animation-name: fade-in-animation;
+    animation-duration: 2s;
+  }
+
+  @keyframes fade-in-animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 }

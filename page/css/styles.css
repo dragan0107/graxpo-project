@@ -705,6 +705,7 @@ header #brand-logo {
   background-size: cover;
   height: 681px;
   padding: 5.625em;
+  transition: all 0.2s ease-in-out;
 }
 #testimonials .testimonials-desc {
   color: white;
@@ -756,6 +757,18 @@ header #brand-logo {
 }
 #testimonials .dot-active {
   background: #e84c3d;
+}
+#testimonials .fade-in {
+  animation-name: fade-in-animation;
+  animation-duration: 2s;
+}
+@keyframes fade-in-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .what-we-do-card {
