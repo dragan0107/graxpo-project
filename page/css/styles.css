@@ -604,6 +604,97 @@ header #brand-logo {
   border-left: none;
 }
 
+#meet-crew {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6.25em;
+  padding-bottom: 5em;
+  background: #ececec;
+}
+
+.meet-crew-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: "Roboto", sans-serif;
+  flex-wrap: wrap;
+  margin-top: 6.25em;
+}
+.meet-crew-cards .meet-crew-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1em;
+}
+.meet-crew-cards .meet-card-img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.meet-crew-cards .meet-card-img-box .meet-card-hover {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+  position: absolute;
+  top: 51%;
+  width: 90%;
+  height: 45%;
+  background: #e84c3d;
+  color: white;
+  padding: 1em;
+  text-align: center;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+.meet-crew-cards .meet-card-img-box .meet-card-hover:hover {
+  opacity: 1;
+}
+.meet-crew-cards .meet-card-img-box .meet-card-hover p {
+  font-size: 0.687em;
+  font-weight: 300;
+  letter-spacing: 1px;
+  line-height: 2em;
+}
+.meet-crew-cards .meet-card-iconbox {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+.meet-crew-cards .meet-card-icon {
+  height: 29px;
+  width: 29px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.meet-crew-cards .meet-card-about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 2.1em;
+}
+.meet-crew-cards .meet-card-about h4 {
+  letter-spacing: 3px;
+  font-size: 1em;
+}
+.meet-crew-cards .meet-card-about p {
+  margin-top: 1em;
+  letter-spacing: 2px;
+  font-size: 0.75em;
+}
+
 .what-we-do-card {
   display: flex;
   justify-content: center;
