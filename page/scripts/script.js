@@ -1,7 +1,7 @@
-let slideIndex = 1;
-showSlides(slideIndex);
+let initialSlide = 1;
+setSlide(initialSlide);
 
-function showSlides(n) {
+function setSlide(n) {
   let testimonialItems = document.getElementsByClassName(
     'testimonials-carousel-item'
   );
@@ -18,9 +18,21 @@ function showSlides(n) {
 }
 
 let autoSlide = 1;
+let myInterval;
 
-setInterval(() => {
-  if (autoSlide > 3) autoSlide = 1;
-  showSlides(autoSlide);
-  autoSlide++;
-}, 2000);
+startInterval(); // Initial interval trigger.
+
+function startInterval() {
+  myInterval = setInterval(() => {
+    if (autoSlide > 3) autoSlide = 1;
+    setSlide(autoSlide);
+    autoSlide++;
+  }, 2000);
+}
+function selectSlide(n) {
+  setSlide(n);
+
+  clearInterval(myInterval); // We reset the interval after manually selecting the slide, and then restart the interval by calling startInterval.
+
+  startInterval();
+}
