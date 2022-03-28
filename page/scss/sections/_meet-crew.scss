@@ -18,6 +18,7 @@
 
   .meet-card-img-box {
     position: relative;
+
     @include flex-center-all;
     .meet-card-hover {
       @include flex-center-all($direction: column);

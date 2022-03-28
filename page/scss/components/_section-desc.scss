@@ -14,20 +14,22 @@
     letter-spacing: 5px;
     font-family: $roboto;
   }
-
-  .section-line {
-    height: 3px;
-    background: rgb(137, 137, 137);
-    width: 46px;
-    margin: 1.5em 0 2em 0;
-  }
 }
+.section-line,
 .white-line {
   height: 3px;
-  background: white;
   width: 46px;
   margin: 1.5em 0 2em 0;
 }
+
+.section-line {
+  background: rgb(137, 137, 137);
+}
+
+.white-line {
+  background: white;
+}
+
 .section-left-align {
   align-items: flex-start;
   text-align: left;
