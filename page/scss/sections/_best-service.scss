@@ -1,7 +1,7 @@
 #best-service {
   @include flex-center-all($direction: column);
-  background: $lightest-grey;
-  padding-top: 6em;
+  @include standard-padding-top;
+  background: $about-us-white;
 }
 
 .best-service-images {

@@ -1,7 +1,7 @@
 #portfolio {
   @include flex-center-all($direction: column);
   padding-top: 6em;
-  background: $lightest-grey;
+  background: $about-us-white;
 
   .portfolio-categories {
     width: 30%;

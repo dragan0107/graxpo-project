@@ -1,0 +1,8 @@
+#footer {
+  @include flex-center-all;
+  height: 5.25em;
+  background: $logo-color;
+  font-family: $open-sans;
+  color: white;
+  font-size: 0.9em;
+}

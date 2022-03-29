@@ -1,0 +1,84 @@
+#get-in-touch {
+  @include flex-center-all($direction: column);
+  @include standard-padding-top;
+  padding-bottom: 5.75em;
+  background: $about-us-white;
+
+  .get-in-touch-contact {
+    @include flex-center-all;
+    @include medium-padding-top;
+  }
+
+  .get-in-touch-form {
+    .input-name,
+    .input-email,
+    textarea {
+      font-family: $open-sans;
+      outline: none;
+      padding: 0.9em;
+      border: 3px solid #ebebeb;
+      background: none;
+      color: $header-light-grey;
+    }
+    input {
+      width: 16.75em;
+      height: 3.125em;
+    }
+
+    .input-name {
+      margin-right: 1em;
+    }
+    .input-email {
+      margin-left: 1em;
+    }
+  }
+  .get-in-touch-inputs {
+    margin-bottom: 1.375em;
+  }
+
+  .get-in-touch-area-btn {
+    @include flex-justify-center($direction: column);
+    button {
+      font-family: $open-sans;
+      width: 16.875em;
+      height: 3.06em;
+      background: $logo-color;
+      color: white;
+      border: none;
+      margin-top: 1.3em;
+      cursor: pointer;
+      letter-spacing: 1px;
+      &:hover {
+        background: #f56d61;
+      }
+    }
+  }
+
+  .get-in-contact-info {
+    @include flex-justify-center($direction: column);
+    padding-left: 2.2em;
+    font-family: $open-sans;
+    margin-bottom: 2em;
+    width: 40%;
+
+    .get-in-contact-info-box {
+      @include flex-align-center;
+      margin: 1em;
+
+      .contact-icons {
+        font-size: 1.875em;
+        color: $logo-color;
+        margin-right: 1em;
+      }
+
+      .fa-location-dot {
+        margin-right: 1.23em;
+      }
+      span {
+        font-size: 0.875em;
+        color: $header-light-grey;
+        letter-spacing: 1px;
+      }
+    }
+  }
+}

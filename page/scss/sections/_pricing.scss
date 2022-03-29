@@ -1,7 +1,7 @@
 #pricing {
   @include flex-center-all($direction: column);
-  background: $lightest-grey;
-  padding-top: 6.75em;
+  @include standard-padding-top;
+  background: $about-us-white;
 
   .pricing-cards {
     @include flex-center-all;

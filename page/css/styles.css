@@ -237,6 +237,7 @@ header #brand-logo {
   display: flex;
   flex-direction: column;
   padding: 6em;
+  background: #f3f3f3;
 }
 #three-steps .three-steps-top {
   display: flex;
@@ -345,8 +346,8 @@ header #brand-logo {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #ececec;
-  padding-top: 6em;
+  padding-top: 6.75em;
+  background: #f3f3f3;
 }
 
 .best-service-images {
@@ -414,7 +415,7 @@ header #brand-logo {
   align-items: center;
   flex-direction: column;
   padding-top: 6em;
-  background: #ececec;
+  background: #f3f3f3;
 }
 #portfolio .portfolio-categories {
   width: 30%;
@@ -780,8 +781,8 @@ header #brand-logo {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #ececec;
   padding-top: 6.75em;
+  background: #f3f3f3;
 }
 #latest-blog .blog-cards {
   display: flex;
@@ -854,8 +855,8 @@ header #brand-logo {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: #ececec;
   padding-top: 6.75em;
+  background: #f3f3f3;
 }
 #pricing .pricing-cards {
   display: flex;
@@ -921,6 +922,105 @@ header #brand-logo {
 }
 #pricing .pricing-card:hover {
   box-shadow: 1px 5px 15px 9px #d4d4d4;
+}
+
+#get-in-touch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6.75em;
+  padding-bottom: 5.75em;
+  background: #f3f3f3;
+}
+#get-in-touch .get-in-touch-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 5.375em;
+}
+#get-in-touch .get-in-touch-form .input-name,
+#get-in-touch .get-in-touch-form .input-email,
+#get-in-touch .get-in-touch-form textarea {
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  padding: 0.9em;
+  border: 3px solid #ebebeb;
+  background: none;
+  color: #81868e;
+}
+#get-in-touch .get-in-touch-form input {
+  width: 16.75em;
+  height: 3.125em;
+}
+#get-in-touch .get-in-touch-form .input-name {
+  margin-right: 1em;
+}
+#get-in-touch .get-in-touch-form .input-email {
+  margin-left: 1em;
+}
+#get-in-touch .get-in-touch-inputs {
+  margin-bottom: 1.375em;
+}
+#get-in-touch .get-in-touch-area-btn {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+#get-in-touch .get-in-touch-area-btn button {
+  font-family: "Open Sans", sans-serif;
+  width: 16.875em;
+  height: 3.06em;
+  background: #e84c3d;
+  color: white;
+  border: none;
+  margin-top: 1.3em;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+#get-in-touch .get-in-touch-area-btn button:hover {
+  background: #f56d61;
+}
+#get-in-touch .get-in-contact-info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 2.2em;
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 2em;
+  width: 40%;
+}
+#get-in-touch .get-in-contact-info .get-in-contact-info-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin: 1em;
+}
+#get-in-touch .get-in-contact-info .get-in-contact-info-box .contact-icons {
+  font-size: 1.875em;
+  color: #e84c3d;
+  margin-right: 1em;
+}
+#get-in-touch .get-in-contact-info .get-in-contact-info-box .fa-location-dot {
+  margin-right: 1.23em;
+}
+#get-in-touch .get-in-contact-info .get-in-contact-info-box span {
+  font-size: 0.875em;
+  color: #81868e;
+  letter-spacing: 1px;
+}
+
+#footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 5.25em;
+  background: #e84c3d;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 0.9em;
 }
 
 .what-we-do-card {
@@ -1005,6 +1105,7 @@ header #brand-logo {
   font-size: 0.875em;
   letter-spacing: 1px;
   width: 60%;
+  color: #81868e;
 }
 .section-desc .section-title {
   font-size: 1.25em;
