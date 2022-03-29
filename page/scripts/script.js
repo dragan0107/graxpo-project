@@ -37,24 +37,39 @@ function selectSlide(n) {
   startInterval();
 }
 
-// Counter
+function jumpToSection(id) {
+  document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+}
 
-const counters = document.querySelectorAll('.views-counter');
-const divider = 300; // Value we divide the full number with, the higher it is, the slower the counting up gets.
+// The observer is checking whether the 'views' section is intersecting, if yes, start the animation.
+const views = document.getElementById('views');
+const options = {};
 
-counters.forEach((counter) => {
-  const countUp = () => {
-    const target = counter.getAttribute('data-target') * 1; // Grabbing target value
-    const count = counter.innerText * 1;
+const observer = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      console.log(entry);
+      const counters = document.querySelectorAll('.views-counter');
+      const divider = 400; // Value we divide the full number with, the higher it is, the slower the counting up gets.
 
-    const incrementer = target / divider; // Declaring the incrementer we keep adding to the counter until we reach the target.
+      counters.forEach((counter) => {
+        const countUp = () => {
+          const target = counter.getAttribute('data-target') * 1; // Grabbing target value
+          const count = counter.innerText * 1;
 
-    if (count < target) {
-      counter.innerText = Math.ceil(count + incrementer);
-      setTimeout(countUp, 5);
-    } else {
-      counter.innerText = target;
+          const incrementer = target / divider; // Declaring the incrementer we keep adding to the counter until we reach the target.
+
+          if (count < target) {
+            counter.innerText = Math.ceil(count + incrementer);
+            setTimeout(countUp, 5);
+          } else {
+            counter.innerText = target;
+          }
+        };
+        countUp();
+      });
     }
-  };
-  countUp();
-});
+  });
+}, options);
+
+observer.observe(views);

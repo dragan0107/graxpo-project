@@ -20,13 +20,23 @@
         <nav>
           <a href="" id="brand-logo">GRAXPO</a>
           <ul class="nav-links">
-            <li>HOME</li>
-            <li>ABOUT</li>
-            <li>SERVICE</li>
-            <li>PORTFOLIO</li>
-            <li>TEAM</li>
-            <li>BLOG</li>
-            <li>CONTACT</li>
+            <li onclick="jumpToSection('header-section')" class="nav-link">
+              HOME
+            </li>
+            <li onclick="jumpToSection('about-us')" class="nav-link">ABOUT</li>
+            <li onclick="jumpToSection('what-we-do')" class="nav-link">
+              SERVICE
+            </li>
+            <li onclick="jumpToSection('portfolio')" class="nav-link">
+              PORTFOLIO
+            </li>
+            <li onclick="jumpToSection('meet-crew')" class="nav-link">TEAM</li>
+            <li onclick="jumpToSection('latest-blog')" class="nav-link">
+              BLOG
+            </li>
+            <li onclick="jumpToSection('get-in-touch')" class="nav-link">
+              CONTACT
+            </li>
           </ul>
         </nav>
       </header>
@@ -44,7 +54,7 @@
         <img class="pen-holder" src="/page/images/pen-holder.png" alt="" />
         <img class="mouse-img" src="/page/images/mouse.png" alt="" />
       </div>
-      <div class="scroll-box">
+      <div class="scroll-box" onclick="jumpToSection('about-us')">
         <img class="icon-scroll" src="/page/images/icon-scroll.png" alt="" />
         <span>SCROLL DOWN</span>
       </div>

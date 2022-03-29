@@ -37,6 +37,7 @@
   height: auto;
   bottom: 5.2em;
   left: 50%;
+  cursor: pointer;
 }
 #header-section .scroll-box span {
   margin-top: 1em;
@@ -55,7 +56,7 @@ header nav {
   display: flex;
   justify-content: space-between;
 }
-header nav ul {
+header nav .nav-links {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -63,10 +64,15 @@ header nav ul {
   margin-right: 10.75em;
   margin-top: 5.4em;
 }
-header nav ul li {
+header nav .nav-links .nav-link {
   margin-left: 2em;
   font-family: "Open Sans", sans-serif;
   font-size: 0.87em;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+header nav .nav-links .nav-link:hover {
+  font-weight: 700;
 }
 header #brand-logo {
   font-size: 1.75em;
