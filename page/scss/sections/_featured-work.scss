@@ -20,7 +20,7 @@
       background: none;
       color: white;
       opacity: 1;
-      @include smooth-transition;
+      transition: all 0.2s ease-in-out;
 
       &:hover {
         cursor: pointer;

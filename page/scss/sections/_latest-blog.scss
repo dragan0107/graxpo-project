@@ -6,12 +6,13 @@
   .blog-cards {
     @include flex-center-all;
     margin-top: 5.35em;
+    width: 60%;
     .blog-card {
       background: url('/page/images/latest-blog/blog2.png');
       background-repeat: no-repeat;
       background-size: cover;
       height: 390px;
-      width: 570px;
+      width: 100%;
       position: relative;
       margin: 1em;
     }
@@ -29,7 +30,8 @@
       color: white;
       padding: 1em;
       opacity: 0;
-      @include smooth-transition;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
 
       &:hover {
         opacity: 1;

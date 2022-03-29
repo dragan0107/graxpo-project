@@ -16,7 +16,7 @@
     width: 323px;
     border: 1px solid #d7d7d7;
     border-radius: 10px;
-    @include smooth-transition;
+    transition: all 0.2s ease-in-out;
     margin: 1.8em;
     h4 {
       font-family: $roboto;

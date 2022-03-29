@@ -239,20 +239,21 @@ header #brand-logo {
   padding: 6em;
   background: #f3f3f3;
 }
-#three-steps .three-steps-top {
+#three-steps .three-steps-desc {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#three-steps .three-steps-bottom {
+#three-steps .three-steps-cards {
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: space-around;
   margin-top: 3.8em;
+  position: relative;
 }
-#three-steps .three-steps-bottom .three-steps-card {
+#three-steps .three-steps-cards .three-steps-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -260,35 +261,53 @@ header #brand-logo {
   width: 18.75em;
   text-align: center;
 }
-#three-steps .three-steps-bottom .three-steps-card h4 {
+#three-steps .three-steps-cards .three-steps-card h4 {
   font-family: "Roboto", sans-serif;
   color: #333b46;
   margin-bottom: 2em;
   letter-spacing: 2px;
 }
-#three-steps .three-steps-bottom .three-steps-card p {
+#three-steps .three-steps-cards .three-steps-card p {
   font-family: "Open Sans", sans-serif;
   color: #81868e;
   letter-spacing: 0.8px;
 }
-#three-steps .three-steps-bottom .three-steps-card .three-step-icon-box {
+#three-steps .three-cards-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 7em;
   height: 7em;
+  width: 7em;
+  background: #f3f3f3;
+  border-radius: 50%;
+  border: 1px solid #c2c2c2;
+  z-index: 1;
+  margin-bottom: 2em;
+}
+#three-steps .three-step-icon-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 5.18em;
+  height: 5.18em;
   background: #e6e6e6;
   border-radius: 50%;
-  padding: 10px;
-  background-clip: content-box;
-  border: 1px solid #e6e6e6;
-  margin-bottom: 2em;
+  z-index: 1;
   position: relative;
 }
-#three-steps .three-steps-bottom .three-steps-card .three-step-icon-box i {
+#three-steps .three-step-icon-box i {
   font-size: 2em;
   color: #e84c3d;
+}
+#three-steps .three-cards-strikethrough {
+  position: absolute;
+  top: 25%;
+  width: 70%;
+  height: 1px;
+  background: #c2c2c2;
+  z-index: 0;
 }
 
 #featured-work {
@@ -527,6 +546,7 @@ header #brand-logo {
   padding: 2em;
   font-family: "Roboto", sans-serif;
   color: white;
+  cursor: pointer;
 }
 #portfolio .portfolio-grid .port-item-content:hover {
   opacity: 0.5;
@@ -653,6 +673,7 @@ header #brand-logo {
   padding: 1em;
   text-align: center;
   opacity: 0;
+  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 .meet-crew-cards .meet-card-img-box .meet-card-hover:hover {
@@ -790,13 +811,14 @@ header #brand-logo {
   align-items: center;
   flex-direction: row;
   margin-top: 5.35em;
+  width: 60%;
 }
 #latest-blog .blog-cards .blog-card {
   background: url("/page/images/latest-blog/blog2.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 390px;
-  width: 570px;
+  width: 100%;
   position: relative;
   margin: 1em;
 }
@@ -816,6 +838,7 @@ header #brand-logo {
   color: white;
   padding: 1em;
   opacity: 0;
+  cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
 #latest-blog .blog-cards .blog-card-desc:hover {
@@ -1100,12 +1123,18 @@ header #brand-logo {
   flex-direction: column;
   text-align: center;
 }
-.section-desc .section-text {
+.section-desc .section-text,
+.section-desc .section-white-text {
   font-family: "Open Sans", sans-serif;
   font-size: 0.875em;
   letter-spacing: 1px;
   width: 60%;
+}
+.section-desc .section-text {
   color: #81868e;
+}
+.section-desc .section-white-text {
+  color: white;
 }
 .section-desc .section-title {
   font-size: 1.25em;

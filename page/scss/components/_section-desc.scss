@@ -2,12 +2,20 @@
   @include flex-align-center($direction: column);
   text-align: center;
   //   width: 60%;
-  .section-text {
+
+  .section-text,
+  .section-white-text {
     font-family: $open-sans;
     font-size: 0.875em;
     letter-spacing: 1px;
     width: 60%;
+  }
+  .section-text {
     color: $header-light-grey;
+  }
+
+  .section-white-text {
+    color: white;
   }
 
   .section-title {

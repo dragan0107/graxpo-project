@@ -36,3 +36,25 @@ function selectSlide(n) {
 
   startInterval();
 }
+
+// Counter
+
+const counters = document.querySelectorAll('.views-counter');
+const divider = 300; // Value we divide the full number with, the higher it is, the slower the counting up gets.
+
+counters.forEach((counter) => {
+  const countUp = () => {
+    const target = counter.getAttribute('data-target') * 1; // Grabbing target value
+    const count = counter.innerText * 1;
+
+    const incrementer = target / divider; // Declaring the incrementer we keep adding to the counter until we reach the target.
+
+    if (count < target) {
+      counter.innerText = Math.ceil(count + incrementer);
+      setTimeout(countUp, 5);
+    } else {
+      counter.innerText = target;
+    }
+  };
+  countUp();
+});

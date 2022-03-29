@@ -123,10 +123,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
       opacity: 0;
-      @include smooth-transition;
+      transition: all 0.2s ease-in-out;
       padding: 2em;
       font-family: $roboto;
       color: white;
+      cursor: pointer;
 
       &:hover {
         opacity: 0.5;

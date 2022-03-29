@@ -29,10 +29,6 @@
   }
 }
 
-@mixin smooth-transition {
-  transition: all 0.2s ease-in-out;
-}
-
 @mixin standard-padding-top {
   padding-top: 6.75em;
 }
