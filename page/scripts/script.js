@@ -79,18 +79,25 @@ observer.observe(views);
 function changeGrid(className) {
   const gridItems = document.querySelector('.portfolio-grid');
 
-  for (let i = 0; i < gridItems.children.length; i++) {
-    const child = gridItems.children[i];
-    child.style.display = 'block';
-    if (!child.classList.contains(className)) {
-      child.style.display = 'none';
-      // console.log(true);
+  if (className !== 'all') {
+    for (let i = 0; i < gridItems.children.length; i++) {
+      const child = gridItems.children[i];
+      child.style.opacity = 'flex';
+      if (!child.classList.contains(className)) {
+        child.style.opacity = 'none';
+        // console.log(true);
+      }
+    }
+  } else {
+    for (let i = 0; i < gridItems.children.length; i++) {
+      const child = gridItems.children[i];
+      child.style.display = 'flex';
     }
   }
 }
 
 function sortCateg(className, elem1, elem2, elem3) {
-  changeGrid(className);
+  if (className === 'all') return changeGrid(className);
 
   document.getElementsByClassName(elem1)[0].style.gridColumn = '1 / span 4';
   document.getElementsByClassName(elem1)[0].style.gridRow = '1 / span 4';
@@ -99,3 +106,13 @@ function sortCateg(className, elem1, elem2, elem3) {
   document.getElementsByClassName(elem3)[0].style.gridColumn = '9 / span 4';
   document.getElementsByClassName(elem3)[0].style.gridRow = '1 / span 4';
 }
+
+window.onload = () => {
+  const grid = document.querySelector('.grid');
+
+  const masonry = new Masonry(grid, {
+    itemSelector: '.grid-item',
+    gutter: 0,
+    // originTop: false,
+  });
+};
