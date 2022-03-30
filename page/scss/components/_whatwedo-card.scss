@@ -14,7 +14,7 @@
     background: $logo-color;
     border-color: $logo-color;
     cursor: pointer;
-    .what-card-right {
+    .what-card-desc {
       h4,
       p {
         color: white;
@@ -31,12 +31,12 @@
     }
   }
 
-  .what-card-left,
-  .what-card-right {
+  .what-card-icon-box,
+  .what-card-desc {
     height: 100%;
   }
 
-  .what-card-right {
+  .what-card-desc {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -61,7 +61,7 @@
       margin: 1.5em 0;
     }
   }
-  .icon-box {
+  .what-icon-wrapper {
     width: 6.75em;
     height: 6.75em;
     background-color: $logo-color;

@@ -20,6 +20,10 @@
       background: none;
       color: $header-light-grey;
     }
+
+    textarea {
+      resize: none;
+    }
     input {
       width: 16.75em;
       height: 3.125em;

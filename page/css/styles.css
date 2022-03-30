@@ -184,14 +184,14 @@ header #brand-logo {
 #what-we-do h4 {
   font-family: "Roboto", sans-serif;
 }
-#what-we-do .what-we-do-top {
+#what-we-do .what-we-do-desc {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   text-align: center;
 }
-#what-we-do .what-we-do-bottom {
+#what-we-do .what-we-do-cards {
   display: flex;
   justify-content: center;
   flex-direction: row;
@@ -979,6 +979,9 @@ header #brand-logo {
   background: none;
   color: #81868e;
 }
+#get-in-touch .get-in-touch-form textarea {
+  resize: none;
+}
 #get-in-touch .get-in-touch-form input {
   width: 16.75em;
   height: 3.125em;
@@ -1070,8 +1073,8 @@ header #brand-logo {
   border-color: #e84c3d;
   cursor: pointer;
 }
-.what-we-do-card:hover .what-card-right h4,
-.what-we-do-card:hover .what-card-right p {
+.what-we-do-card:hover .what-card-desc h4,
+.what-we-do-card:hover .what-card-desc p {
   color: white;
 }
 .what-we-do-card:hover .icon-box {
@@ -1082,34 +1085,34 @@ header #brand-logo {
   transition: all 0.2s ease-in-out;
   color: #e84c3d;
 }
-.what-we-do-card .what-card-left,
-.what-we-do-card .what-card-right {
+.what-we-do-card .what-card-icon-box,
+.what-we-do-card .what-card-desc {
   height: 100%;
 }
-.what-we-do-card .what-card-right {
+.what-we-do-card .what-card-desc {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
   margin-left: 2em;
 }
-.what-we-do-card .what-card-right h4 {
+.what-we-do-card .what-card-desc h4 {
   font-size: 1em;
   color: #898989;
 }
-.what-we-do-card .what-card-right p {
+.what-we-do-card .what-card-desc p {
   font-family: "Open Sans", sans-serif;
   line-height: 1.7em;
   color: #898989;
   font-size: 0.875em;
 }
-.what-we-do-card .what-card-right .what-we-do-line {
+.what-we-do-card .what-card-desc .what-we-do-line {
   background: #d7d7d7;
   height: 2px;
   width: 31px;
   margin: 1.5em 0;
 }
-.what-we-do-card .icon-box {
+.what-we-do-card .what-icon-wrapper {
   width: 6.75em;
   height: 6.75em;
   background-color: #e84c3d;
@@ -1118,7 +1121,7 @@ header #brand-logo {
   justify-content: center;
   align-items: center;
 }
-.what-we-do-card .icon-box i {
+.what-we-do-card .what-icon-wrapper i {
   font-size: 2.81em;
   color: white;
 }

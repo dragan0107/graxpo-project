@@ -39,25 +39,3 @@
     margin: 1.5em 0 2em 0;
   }
 }
-
-// What we do section
-
-#what-we-do {
-  @include flex-align-center($direction: column);
-  background: $about-us-white;
-
-  h4 {
-    font-family: $roboto;
-  }
-
-  .what-we-do-top {
-    @include flex-center-all;
-    text-align: center;
-  }
-
-  .what-we-do-bottom {
-    @include flex-justify-center;
-    flex-wrap: wrap;
-    padding: 3em 16em;
-  }
-}

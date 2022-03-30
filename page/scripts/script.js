@@ -73,3 +73,29 @@ const observer = new IntersectionObserver(function (entries, observer) {
 }, options);
 
 observer.observe(views);
+
+// Grid manipulation
+
+function changeGrid(className) {
+  const gridItems = document.querySelector('.portfolio-grid');
+
+  for (let i = 0; i < gridItems.children.length; i++) {
+    const child = gridItems.children[i];
+    child.style.display = 'block';
+    if (!child.classList.contains(className)) {
+      child.style.display = 'none';
+      // console.log(true);
+    }
+  }
+}
+
+function sortCateg(className, elem1, elem2, elem3) {
+  changeGrid(className);
+
+  document.getElementsByClassName(elem1)[0].style.gridColumn = '1 / span 4';
+  document.getElementsByClassName(elem1)[0].style.gridRow = '1 / span 4';
+  document.getElementsByClassName(elem2)[0].style.gridColumn = '5 / span 4';
+  document.getElementsByClassName(elem2)[0].style.gridRow = '1 / span 4';
+  document.getElementsByClassName(elem3)[0].style.gridColumn = '9 / span 4';
+  document.getElementsByClassName(elem3)[0].style.gridRow = '1 / span 4';
+}

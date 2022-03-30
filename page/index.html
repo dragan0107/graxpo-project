@@ -60,7 +60,7 @@
       </div>
     </section>
     <section id="about-us">
-      <div class="about-left">
+      <div class="about-us-desc">
         <h3>ABOUT GRAXPO</h3>
         <div class="line"></div>
         <p>
@@ -73,12 +73,12 @@
         </p>
         <button>LEARN MORE !</button>
       </div>
-      <div class="about-right">
+      <div class="about-us-img">
         <img src="/page/images/about.png" alt="" />
       </div>
     </section>
     <section id="what-we-do">
-      <div class="what-we-do-top">
+      <div class="what-we-do-desc">
         <div class="section-desc">
           <h3 class="section-title">WHAT WE DO</h3>
           <div class="section-line"></div>
@@ -88,14 +88,14 @@
           </p>
         </div>
       </div>
-      <div class="what-we-do-bottom">
+      <div class="what-we-do-cards">
         <div class="what-we-do-card">
-          <div class="what-card-left">
-            <div class="icon-box">
+          <div class="what-card-icon-box">
+            <div class="what-icon-wrapper">
               <i class="fa-solid fa-desktop"></i>
             </div>
           </div>
-          <div class="what-card-right">
+          <div class="what-card-desc">
             <h4>UI / UX DESIGN</h4>
             <div class="what-we-do-line"></div>
             <p>
@@ -105,12 +105,12 @@
           </div>
         </div>
         <div class="what-we-do-card">
-          <div class="what-card-left">
-            <div class="icon-box">
+          <div class="what-card-icon-box">
+            <div class="what-icon-wrapper">
               <i class="fa-regular fa-star"></i>
             </div>
           </div>
-          <div class="what-card-right">
+          <div class="what-card-desc">
             <h4>BRANDING & IDENTITY</h4>
             <div class="what-we-do-line"></div>
             <p>
@@ -120,12 +120,12 @@
           </div>
         </div>
         <div class="what-we-do-card">
-          <div class="what-card-left">
-            <div class="icon-box">
+          <div class="what-card-icon-box">
+            <div class="what-icon-wrapper">
               <i class="fa-solid fa-mobile-screen-button"></i>
             </div>
           </div>
-          <div class="what-card-right">
+          <div class="what-card-desc">
             <h4>APP DESIGN</h4>
             <div class="what-we-do-line"></div>
             <p>
@@ -135,12 +135,12 @@
           </div>
         </div>
         <div class="what-we-do-card">
-          <div class="what-card-left">
-            <div class="icon-box">
+          <div class="what-card-icon-box">
+            <div class="what-icon-wrapper">
               <i class="fa-regular fa-pen-to-square"></i>
             </div>
           </div>
-          <div class="what-card-right">
+          <div class="what-card-desc">
             <h4>PRINT DESIGN</h4>
             <div class="what-we-do-line"></div>
             <p>
@@ -339,19 +339,39 @@
       </div>
       <div class="portfolio-categories">
         <ul class="portfolio-categ-list">
-          <li class="categ-name">All Categories</li>
+          <li class="categ-name" onclick="sortCateg('all')">All Categories</li>
           <span class="categ-separator">/</span>
-          <li class="categ-name">Print</li>
+          <li
+            class="categ-name"
+            onclick="sortCateg('categ-print','portfolio-item-2','portfolio-item-8','portfolio-item-12')"
+          >
+            Print
+          </li>
           <span class="categ-separator">/</span>
-          <li class="categ-name">Identity</li>
+          <li
+            class="categ-name"
+            onclick="sortCateg('categ-identity','portfolio-item-4','portfolio-item-5','portfolio-item-6')"
+          >
+            Identity
+          </li>
           <span class="categ-separator">/</span>
-          <li class="categ-name">Branding</li>
+          <li
+            class="categ-name"
+            onclick="sortCateg('categ-brand','portfolio-item-1','portfolio-item-10','portfolio-item-11')"
+          >
+            Branding
+          </li>
           <span class="categ-separator">/</span>
-          <li class="categ-name">Web</li>
+          <li
+            class="categ-name"
+            onclick="sortCateg('categ-web','portfolio-item-3','portfolio-item-7','portfolio-item-9')"
+          >
+            Web
+          </li>
         </ul>
       </div>
-      <div class="portfolio-grid">
-        <div class="portfolio-item-1">
+      <div id="port-grid" class="portfolio-grid">
+        <div class="categ-brand portfolio-item-1">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>
@@ -360,7 +380,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item-2">
+        <div class="categ-print portfolio-item-2">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>
@@ -370,7 +390,7 @@
           </div>
         </div>
 
-        <div class="portfolio-item-3">
+        <div class="categ-web portfolio-item-3">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>
@@ -379,7 +399,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item-4">
+        <div class="categ-identity portfolio-item-4">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>
@@ -388,7 +408,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item-5">
+        <div class="categ-identity portfolio-item-5">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>
@@ -397,7 +417,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item-6">
+        <div class="categ-identity portfolio-item-6">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>
@@ -406,7 +426,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item-7">
+        <div class="categ-web portfolio-item-7">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>
@@ -415,7 +435,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item-8">
+        <div class="categ-print portfolio-item-8">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>
@@ -424,7 +444,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item-9">
+        <div class="categ-web portfolio-item-9">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>
@@ -433,7 +453,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item-10">
+        <div class="categ-brand portfolio-item-10">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>
@@ -442,7 +462,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item-11">
+        <div class="categ-brand portfolio-item-11">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>
@@ -451,7 +471,7 @@
             </div>
           </div>
         </div>
-        <div class="portfolio-item-12">
+        <div class="categ-print portfolio-item-12">
           <div class="port-item-content">
             <div>
               <h1 class="port-item-title">THE WINTER TAL'S</h1>

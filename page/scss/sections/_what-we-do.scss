@@ -1,0 +1,19 @@
+#what-we-do {
+  @include flex-align-center($direction: column);
+  background: $about-us-white;
+
+  h4 {
+    font-family: $roboto;
+  }
+
+  .what-we-do-desc {
+    @include flex-center-all;
+    text-align: center;
+  }
+
+  .what-we-do-cards {
+    @include flex-justify-center;
+    flex-wrap: wrap;
+    padding: 3em 16em;
+  }
+}
