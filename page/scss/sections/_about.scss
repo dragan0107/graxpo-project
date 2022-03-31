@@ -1,6 +1,6 @@
 #about-us {
   display: flex;
-  padding: 7.5em 15em;
+  padding: 7.5em 10%;
   background: $about-us-white;
 
   h3 {
@@ -40,8 +40,28 @@
   }
 
   .about-us-img {
-    min-width: 50%;
+    min-width: 40%;
+    @include flex-center-all;
 
+    // img {
+    //   width: 50%;
+    // }
+  }
+}
+
+@media (max-width: $max-medium) {
+  #about-us {
+    flex-direction: column;
+  }
+
+  .about-us-img {
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: $max-mobile) {
+  .about-us-img {
+    min-width: 30%;
     img {
       width: 100%;
     }

@@ -5,36 +5,49 @@
   height: 23em;
   color: white;
   font-family: $roboto;
+}
+.views-card {
+  width: 12.5em;
+  margin: 1.5em;
+}
+.views-card-title {
+  @include flex-align-center;
+  margin-bottom: 2em;
 
-  .views-card {
-    width: 12.5em;
-    margin: 1.5em;
+  i {
+    font-size: 2.5em;
+    margin-right: 0.4em;
+  }
+}
 
-    .views-card-title {
-      @include flex-align-center;
-      margin-bottom: 2em;
+h2 {
+  font-size: 1.9em;
+  font-weight: 400;
+  letter-spacing: 2.1px;
+}
 
-      i {
-        font-size: 2.5em;
-        margin-right: 0.4em;
-      }
-    }
+.views-line {
+  background: white;
+  height: 2px;
+  width: 3em;
+  margin-top: 1.5em;
+}
 
-    h2 {
-      font-size: 1.9em;
-      font-weight: 400;
-      letter-spacing: 2.1px;
-    }
+.views-desc {
+  font-weight: 300;
+}
 
-    .views-line {
-      background: white;
-      height: 2px;
-      width: 3em;
-      margin-top: 1.5em;
-    }
+.views-card-pair {
+  display: flex;
+}
 
-    .views-desc {
-      font-weight: 300;
-    }
+@media (max-width: $max-medium) {
+  .views-card-pair {
+    flex-direction: column;
+  }
+}
+@media (max-width: $max-mobile) {
+  #views {
+    font-size: 11px;
   }
 }

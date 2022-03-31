@@ -3,7 +3,7 @@
 .what-we-do-card {
   @include flex-center-all;
   width: 33%;
-  min-height: 14.81em;
+  min-height: 13em;
   border: 3px solid rgb(235, 235, 235);
   border-radius: 7px;
   padding: 1.8em;
@@ -76,8 +76,14 @@
     }
   }
 }
-@media (max-width: 768px) {
+@media (max-width: $max-large) {
   .what-we-do-card {
-    width: 60%;
+    width: 90%;
+  }
+}
+
+@media (max-width: $max-mobile) {
+  .what-we-do-card {
+    width: 97%;
   }
 }

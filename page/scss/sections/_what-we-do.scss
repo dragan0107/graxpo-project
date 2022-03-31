@@ -10,21 +10,32 @@
     @include flex-center-all;
     text-align: center;
   }
-
-  .what-we-do-cards {
-    @include flex-justify-center;
-    flex-wrap: wrap;
-    padding: 3em 4em;
-    width: 100%;
-  }
+}
+.what-we-do-cards {
+  @include flex-justify-center;
+  flex-wrap: wrap;
+  padding: 3em 4em;
+  width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: $max-tablets) {
   #what-we-do {
-    font-size: 12px;
+    font-size: 16px;
   }
 
   .what-we-do-cards {
     flex-direction: column;
+    padding: 5% 5%;
+  }
+}
+
+@media (max-width: $max-mobile) {
+  #what-we-do {
+    font-size: 14px;
+  }
+
+  .what-we-do-cards {
+    flex-direction: column;
+    padding: 2% 5%;
   }
 }
