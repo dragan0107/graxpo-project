@@ -10,19 +10,42 @@
   background: $logo-color;
   color: white;
   width: 100%;
+}
+img {
+  min-width: 30%;
+}
+.best-service-desc {
+  max-width: 55%;
+  padding: 5%;
+}
 
-  .best-service-box {
-    @include flex-align-center;
-    justify-content: space-between;
+.service-box-right {
+  flex-direction: row-reverse;
+  margin: 0;
+  padding-left: 6.1em;
+}
+.best-service-box {
+  @include flex-align-center;
+  justify-content: space-between;
+}
+
+@media (max-width: $max-tablets) {
+  #best-service {
+    font-size: 16px;
+  }
+  .best-service-desc {
+    max-width: 90%;
+    padding: 2%;
   }
 
-  .best-service-desc {
-    max-width: 55%;
+  .best-service-box {
+    flex-direction: column;
   }
 
   .service-box-right {
-    flex-direction: row-reverse;
-    margin: 0;
-    padding-left: 6.1em;
+    padding: 0;
+  }
+  img {
+    width: 100%;
   }
 }

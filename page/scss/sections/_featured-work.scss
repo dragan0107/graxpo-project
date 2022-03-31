@@ -2,47 +2,49 @@
   @include flex-center-all($direction: column);
   background: $lightest-grey;
   padding-top: 6em;
+}
+.featured-work-cards {
+  margin-top: 4.2em;
+  @include flex-center-all;
+  flex-wrap: wrap;
 
-  .featured-work-cards {
-    margin-top: 4.2em;
-    display: flex;
-    flex-wrap: wrap;
-
-    .featured-card {
-      position: relative;
+  .featured-card {
+    position: relative;
+    img {
+      max-width: 100%;
     }
+  }
 
-    .detail-btn {
-      width: 156px;
-      height: 40px;
-      border: 1px solid white;
-      border-radius: 10px;
-      background: none;
-      color: white;
+  .detail-btn {
+    width: 156px;
+    height: 40px;
+    border: 1px solid white;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      cursor: pointer;
+      background: white;
+      color: $dark-blue;
+    }
+  }
+  .featured-hover-box {
+    @include flex-center-all;
+    width: 95%;
+    height: 92%;
+    background-color: rgba(223, 55, 39, 0.66);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
       opacity: 1;
-      transition: all 0.2s ease-in-out;
-
-      &:hover {
-        cursor: pointer;
-        background: white;
-        color: $dark-blue;
-      }
-    }
-    .featured-hover-box {
-      @include flex-center-all;
-      width: 435px;
-      height: 297px;
-      background-color: rgba(223, 55, 39, 0.66);
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      opacity: 0;
-      transition: all 0.3s ease-in-out;
-
-      &:hover {
-        opacity: 1;
-      }
     }
   }
 }

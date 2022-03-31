@@ -5,6 +5,7 @@
   height: 24.5em;
   color: white;
   font-family: $roboto;
+  text-align: center;
 
   h1 {
     font-size: 1.85em;
@@ -31,5 +32,11 @@
     color: white;
     background: $logo-color;
     cursor: pointer;
+  }
+}
+
+@media (max-width: $max-mobile) {
+  #create-business {
+    font-size: 14px;
   }
 }

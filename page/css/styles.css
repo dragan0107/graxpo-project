@@ -361,13 +361,15 @@ h2 {
   padding: 6em;
   background: #f3f3f3;
 }
-#three-steps .three-steps-desc {
+
+.three-steps-desc {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-#three-steps .three-steps-cards {
+
+.three-steps-cards {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -375,7 +377,8 @@ h2 {
   margin-top: 3.8em;
   position: relative;
 }
-#three-steps .three-steps-cards .three-steps-card {
+
+.three-steps-card {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,18 +386,19 @@ h2 {
   width: 18.75em;
   text-align: center;
 }
-#three-steps .three-steps-cards .three-steps-card h4 {
+.three-steps-card h4 {
   font-family: "Roboto", sans-serif;
   color: #333b46;
   margin-bottom: 2em;
   letter-spacing: 2px;
 }
-#three-steps .three-steps-cards .three-steps-card p {
+.three-steps-card p {
   font-family: "Open Sans", sans-serif;
   color: #81868e;
   letter-spacing: 0.8px;
 }
-#three-steps .three-cards-wrapper {
+
+.three-cards-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -407,7 +411,8 @@ h2 {
   z-index: 1;
   margin-bottom: 2em;
 }
-#three-steps .three-step-icon-box {
+
+.three-step-icon-box {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -419,11 +424,12 @@ h2 {
   z-index: 1;
   position: relative;
 }
-#three-steps .three-step-icon-box i {
+.three-step-icon-box i {
   font-size: 2em;
   color: #e84c3d;
 }
-#three-steps .three-cards-strikethrough {
+
+.three-cards-strikethrough {
   position: absolute;
   top: 25%;
   width: 70%;
@@ -432,6 +438,23 @@ h2 {
   z-index: 0;
 }
 
+@media (max-width: 769px) {
+  #three-steps {
+    padding: 10% 5%;
+  }
+
+  .three-steps-cards {
+    flex-direction: column;
+  }
+
+  .three-cards-strikethrough {
+    display: none;
+  }
+
+  .three-steps-card {
+    margin: 1em;
+  }
+}
 #featured-work {
   display: flex;
   justify-content: center;
@@ -440,15 +463,22 @@ h2 {
   background: #ececec;
   padding-top: 6em;
 }
-#featured-work .featured-work-cards {
+
+.featured-work-cards {
   margin-top: 4.2em;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
   flex-wrap: wrap;
 }
-#featured-work .featured-work-cards .featured-card {
+.featured-work-cards .featured-card {
   position: relative;
 }
-#featured-work .featured-work-cards .detail-btn {
+.featured-work-cards .featured-card img {
+  max-width: 100%;
+}
+.featured-work-cards .detail-btn {
   width: 156px;
   height: 40px;
   border: 1px solid white;
@@ -458,18 +488,18 @@ h2 {
   opacity: 1;
   transition: all 0.2s ease-in-out;
 }
-#featured-work .featured-work-cards .detail-btn:hover {
+.featured-work-cards .detail-btn:hover {
   cursor: pointer;
   background: white;
   color: #333b46;
 }
-#featured-work .featured-work-cards .featured-hover-box {
+.featured-work-cards .featured-hover-box {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  width: 435px;
-  height: 297px;
+  width: 95%;
+  height: 92%;
   background-color: rgba(223, 55, 39, 0.66);
   position: absolute;
   top: 50%;
@@ -478,7 +508,7 @@ h2 {
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-#featured-work .featured-work-cards .featured-hover-box:hover {
+.featured-work-cards .featured-hover-box:hover {
   opacity: 1;
 }
 
@@ -500,21 +530,51 @@ h2 {
   color: white;
   width: 100%;
 }
-.best-service-images .best-service-box {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
+
+img {
+  min-width: 30%;
 }
-.best-service-images .best-service-desc {
+
+.best-service-desc {
   max-width: 55%;
+  padding: 5%;
 }
-.best-service-images .service-box-right {
+
+.service-box-right {
   flex-direction: row-reverse;
   margin: 0;
   padding-left: 6.1em;
 }
 
+.best-service-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (max-width: 769px) {
+  #best-service {
+    font-size: 16px;
+  }
+
+  .best-service-desc {
+    max-width: 90%;
+    padding: 2%;
+  }
+
+  .best-service-box {
+    flex-direction: column;
+  }
+
+  .service-box-right {
+    padding: 0;
+  }
+
+  img {
+    width: 100%;
+  }
+}
 #create-business {
   display: flex;
   justify-content: center;
@@ -525,6 +585,7 @@ h2 {
   height: 24.5em;
   color: white;
   font-family: "Roboto", sans-serif;
+  text-align: center;
 }
 #create-business h1 {
   font-size: 1.85em;
@@ -550,6 +611,11 @@ h2 {
   cursor: pointer;
 }
 
+@media (max-width: 480px) {
+  #create-business {
+    font-size: 14px;
+  }
+}
 #portfolio {
   display: flex;
   justify-content: center;

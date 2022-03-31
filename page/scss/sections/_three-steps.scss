@@ -3,66 +3,81 @@
   flex-direction: column;
   padding: 6em;
   background: $about-us-white;
+}
+.three-steps-desc {
+  @include flex-center-all($direction: column);
+}
 
-  .three-steps-desc {
-    @include flex-center-all($direction: column);
-  }
+.three-steps-cards {
+  @include flex-align-center;
+  justify-content: space-around;
+  margin-top: 3.8em;
+  position: relative;
+}
+.three-steps-card {
+  @include flex-center-all($direction: column);
+  width: 18.75em;
+  text-align: center;
 
-  .three-steps-cards {
-    @include flex-align-center;
-    justify-content: space-around;
-    margin-top: 3.8em;
-    position: relative;
-
-    .three-steps-card {
-      @include flex-center-all($direction: column);
-      width: 18.75em;
-      text-align: center;
-
-      h4 {
-        font-family: $roboto;
-        color: #333b46;
-        margin-bottom: 2em;
-        letter-spacing: 2px;
-      }
-      p {
-        font-family: $open-sans;
-        color: #81868e;
-        letter-spacing: 0.8px;
-      }
-    }
-  }
-  .three-cards-wrapper {
-    @include flex-center-all;
-    height: 7em;
-    width: 7em;
-    background: $about-us-white;
-    border-radius: 50%;
-    border: 1px solid #c2c2c2;
-    z-index: 1;
+  h4 {
+    font-family: $roboto;
+    color: #333b46;
     margin-bottom: 2em;
+    letter-spacing: 2px;
+  }
+  p {
+    font-family: $open-sans;
+    color: #81868e;
+    letter-spacing: 0.8px;
+  }
+}
+.three-cards-wrapper {
+  @include flex-center-all;
+  height: 7em;
+  width: 7em;
+  background: $about-us-white;
+  border-radius: 50%;
+  border: 1px solid #c2c2c2;
+  z-index: 1;
+  margin-bottom: 2em;
+}
+
+.three-step-icon-box {
+  @include flex-center-all;
+  width: 5.18em;
+  height: 5.18em;
+  background: #e6e6e6;
+  border-radius: 50%;
+  z-index: 1;
+  position: relative;
+
+  i {
+    font-size: 2em;
+    color: $logo-color;
+  }
+}
+.three-cards-strikethrough {
+  position: absolute;
+  top: 25%;
+  width: 70%;
+  height: 1px;
+  background: #c2c2c2;
+  z-index: 0;
+}
+
+@media (max-width: $max-tablets) {
+  #three-steps {
+    padding: 10% 5%;
+  }
+  .three-steps-cards {
+    flex-direction: column;
   }
 
-  .three-step-icon-box {
-    @include flex-center-all;
-    width: 5.18em;
-    height: 5.18em;
-    background: #e6e6e6;
-    border-radius: 50%;
-    z-index: 1;
-    position: relative;
-
-    i {
-      font-size: 2em;
-      color: $logo-color;
-    }
-  }
   .three-cards-strikethrough {
-    position: absolute;
-    top: 25%;
-    width: 70%;
-    height: 1px;
-    background: #c2c2c2;
-    z-index: 0;
+    display: none;
+  }
+
+  .three-steps-card {
+    margin: 1em;
   }
 }
