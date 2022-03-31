@@ -1,38 +1,24 @@
 .grid {
-  width: 60%;
+  width: 70%;
+  margin-top: 3.3em;
+  height: 60%;
 }
 .grid-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center-all;
   min-width: 20%;
-  max-width: 31%;
+  max-width: 28%;
   position: relative;
   img {
     width: 100%;
   }
 }
 
-.grid-item-2 {
-  position: relative;
-}
-
-.grid-img-box {
-  position: relative;
-}
-
 .grid-item-6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-center-all;
 }
 
 .grid-item-9 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-.grid-item-11 {
+  @include flex-justify-center($direction: column);
 }
 
 .grid-hover-box {
@@ -76,4 +62,8 @@
     border-top: 2px solid #c2c2c2;
     width: 34px;
   }
+}
+
+.grid-img-box {
+  position: relative;
 }

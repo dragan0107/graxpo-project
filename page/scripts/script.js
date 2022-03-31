@@ -76,36 +76,25 @@ observer.observe(views);
 
 // Grid manipulation
 
-function changeGrid(className) {
-  const gridItems = document.querySelector('.portfolio-grid');
+// function changeGrid(className) {
+//   const gridItems = document.querySelector('.portfolio-grid');
 
-  if (className !== 'all') {
-    for (let i = 0; i < gridItems.children.length; i++) {
-      const child = gridItems.children[i];
-      child.style.opacity = 'flex';
-      if (!child.classList.contains(className)) {
-        child.style.opacity = 'none';
-        // console.log(true);
-      }
-    }
-  } else {
-    for (let i = 0; i < gridItems.children.length; i++) {
-      const child = gridItems.children[i];
-      child.style.display = 'flex';
-    }
-  }
-}
-
-function sortCateg(className, elem1, elem2, elem3) {
-  if (className === 'all') return changeGrid(className);
-
-  document.getElementsByClassName(elem1)[0].style.gridColumn = '1 / span 4';
-  document.getElementsByClassName(elem1)[0].style.gridRow = '1 / span 4';
-  document.getElementsByClassName(elem2)[0].style.gridColumn = '5 / span 4';
-  document.getElementsByClassName(elem2)[0].style.gridRow = '1 / span 4';
-  document.getElementsByClassName(elem3)[0].style.gridColumn = '9 / span 4';
-  document.getElementsByClassName(elem3)[0].style.gridRow = '1 / span 4';
-}
+//   if (className !== 'all') {
+//     for (let i = 0; i < gridItems.children.length; i++) {
+//       const child = gridItems.children[i];
+//       child.style.opacity = 'flex';
+//       if (!child.classList.contains(className)) {
+//         child.style.opacity = 'none';
+//         // console.log(true);
+//       }
+//     }
+//   } else {
+//     for (let i = 0; i < gridItems.children.length; i++) {
+//       const child = gridItems.children[i];
+//       child.style.display = 'flex';
+//     }
+//   }
+// }
 
 window.onload = () => {
   const grid = document.querySelector('.grid');
@@ -115,4 +104,14 @@ window.onload = () => {
     gutter: 0,
     // originTop: false,
   });
+  let elems = ['grid-item-6', 'grid-item-8', 'grid-item-12'];
+  document.getElementById('print-filter').addEventListener('click', () => {
+    elems.forEach((elem) => {
+      let item = document.getElementsByClassName(elem)[0];
+      masonry.remove(item, this).masonry('layout');
+      masonry.reloadItems();
+    });
+  });
 };
+
+function sortCateg() {}

@@ -1056,33 +1056,29 @@ header #brand-logo {
 }
 
 .grid {
-  width: 60%;
+  width: 70%;
+  margin-top: 3.3em;
+  height: 60%;
 }
 
 .grid-item {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   min-width: 20%;
-  max-width: 31%;
+  max-width: 28%;
   position: relative;
 }
 .grid-item img {
   width: 100%;
 }
 
-.grid-item-2 {
-  position: relative;
-}
-
-.grid-img-box {
-  position: relative;
-}
-
 .grid-item-6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
 }
 
 .grid-item-9 {
@@ -1132,6 +1128,10 @@ header #brand-logo {
   border: none;
   border-top: 2px solid #c2c2c2;
   width: 34px;
+}
+
+.grid-img-box {
+  position: relative;
 }
 
 .what-we-do-card {
