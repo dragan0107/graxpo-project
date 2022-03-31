@@ -56,7 +56,6 @@ const observer = new IntersectionObserver(function (entries, observer) {
         const countUp = () => {
           const target = counter.getAttribute('data-target') * 1; // Grabbing target value
           const count = counter.innerText * 1;
-
           const incrementer = target / divider; // Declaring the incrementer we keep adding to the counter until we reach the target.
 
           if (count < target) {
@@ -95,23 +94,44 @@ observer.observe(views);
 //     }
 //   }
 // }
+let msnry;
 
 window.onload = () => {
   const grid = document.querySelector('.grid');
 
-  const masonry = new Masonry(grid, {
+  msnry = new Masonry(grid, {
     itemSelector: '.grid-item',
     gutter: 0,
-    // originTop: false,
-  });
-  let elems = ['grid-item-6', 'grid-item-8', 'grid-item-12'];
-  document.getElementById('print-filter').addEventListener('click', () => {
-    elems.forEach((elem) => {
-      let item = document.getElementsByClassName(elem)[0];
-      masonry.remove(item, this).masonry('layout');
-      masonry.reloadItems();
-    });
   });
 };
 
-function sortCateg() {}
+let gridElems = document.querySelector('.grid');
+
+let children = Array.from(gridElems.children);
+
+let childrenCopy = [];
+for (let i = 0; i < children.length; i++) {
+  let clone = children[i].cloneNode(true);
+  childrenCopy.push(clone);
+}
+
+function sortCateg() {
+  let elems = [...arguments];
+
+  for (let i = 0; i < children.length; i++) {
+    elems.forEach((elem) => {
+      if (children[i].classList.contains(elem)) {
+        children.splice(i, 1);
+      }
+    });
+  }
+  msnry.remove(children);
+  msnry.layout();
+}
+
+const hamburger = document.querySelector('.hamburger-menu');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});

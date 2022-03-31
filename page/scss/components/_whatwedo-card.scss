@@ -2,8 +2,8 @@
 
 .what-we-do-card {
   @include flex-center-all;
-  width: 33em;
-  height: 14.81em;
+  width: 33%;
+  min-height: 14.81em;
   border: 3px solid rgb(235, 235, 235);
   border-radius: 7px;
   padding: 1.8em;
@@ -20,10 +20,11 @@
         color: white;
       }
     }
-    .icon-box {
-      transition: all 0.2s ease-in-out;
 
-      background-color: white;
+    .what-icon-wrapper {
+      transition: all 0.2s ease-in-out;
+      background: white;
+
       i {
         transition: all 0.2s ease-in-out;
         color: $logo-color;
@@ -73,5 +74,10 @@
       font-size: 2.81em;
       color: white;
     }
+  }
+}
+@media (max-width: 768px) {
+  .what-we-do-card {
+    width: 60%;
   }
 }

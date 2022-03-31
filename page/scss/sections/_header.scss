@@ -41,30 +41,13 @@
 }
 
 header {
-  width: 100%;
+  min-width: 100%;
   height: auto;
   order: -1;
+  position: relative;
   nav {
     display: flex;
     justify-content: space-between;
-
-    .nav-links {
-      @include flex-align-center;
-      list-style: none;
-      margin-right: 10.75em;
-      margin-top: 5.4em;
-      .nav-link {
-        margin-left: 2em;
-        font-family: $open-sans;
-        font-size: 0.87em;
-        cursor: pointer;
-        transition: all 0.2s ease-in-out;
-
-        &:hover {
-          font-weight: 700;
-        }
-      }
-    }
   }
 
   #brand-logo {
@@ -74,6 +57,24 @@ header {
     color: $logo-color;
     margin-left: 6.25em;
     margin-top: 3.25em;
+  }
+}
+
+.nav-links {
+  @include flex-align-center;
+  list-style: none;
+  margin-right: 10.75em;
+  margin-top: 5.4em;
+  .nav-link {
+    margin-left: 2em;
+    font-family: $open-sans;
+    font-size: 0.87em;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    &:hover {
+      font-weight: 700;
+    }
   }
 }
 
@@ -130,5 +131,47 @@ header {
   .icon-scroll {
     margin-bottom: 1.5em;
     position: relative;
+  }
+}
+
+.hamburger-menu {
+  display: none;
+  align-items: flex-end;
+  cursor: pointer;
+}
+
+.bar-wrapper {
+}
+
+.hamb-menu-bar {
+  display: flex;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background: $dark-blue;
+}
+
+@media (max-width: $max-large) {
+  .nav-links {
+    top: -500%;
+    position: absolute;
+    flex-direction: column;
+    z-index: 1;
+    background-color: #636c79;
+    width: 100%;
+    transition: all 0.3s ease-in;
+    padding: 1em;
+  }
+  .nav-link {
+    margin-bottom: 15px;
+    color: white;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  .nav-links.active {
+    top: 40%;
   }
 }
