@@ -1,41 +1,9 @@
 #get-in-touch {
   @include flex-center-all($direction: column);
-  @include standard-padding-top;
+  padding-top: 6.25em;
   padding-bottom: 5.75em;
   background: $about-us-white;
 
-  .get-in-touch-contact {
-    @include flex-center-all;
-    @include medium-padding-top;
-  }
-
-  .get-in-touch-form {
-    .input-name,
-    .input-email,
-    textarea {
-      font-family: $open-sans;
-      outline: none;
-      padding: 0.9em;
-      border: 3px solid #ebebeb;
-      background: none;
-      color: $header-light-grey;
-    }
-
-    textarea {
-      resize: none;
-    }
-    input {
-      width: 16.75em;
-      height: 3.125em;
-    }
-
-    .input-name {
-      margin-right: 1em;
-    }
-    .input-email {
-      margin-left: 1em;
-    }
-  }
   .get-in-touch-inputs {
     margin-bottom: 1.375em;
   }
@@ -57,32 +25,105 @@
       }
     }
   }
+}
 
-  .get-in-contact-info {
-    @include flex-justify-center($direction: column);
-    padding-left: 2.2em;
+.get-in-touch-form {
+  .input-name,
+  .input-email,
+  textarea {
     font-family: $open-sans;
-    margin-bottom: 2em;
-    width: 40%;
+    outline: none;
+    padding: 0.9em;
+    border: 3px solid #ebebeb;
+    background: none;
+    color: $header-light-grey;
+  }
 
-    .get-in-contact-info-box {
-      @include flex-align-center;
-      margin: 1em;
+  textarea {
+    resize: none;
+  }
+  input {
+    width: 16.75em;
+    height: 3.125em;
+  }
 
-      .contact-icons {
-        font-size: 1.875em;
-        color: $logo-color;
-        margin-right: 1em;
-      }
+  .input-name {
+    margin-right: 1em;
+  }
+  .input-email {
+    margin-left: 1em;
+  }
+}
+.get-in-contact-info {
+  @include flex-justify-center($direction: column);
+  padding-left: 2.2em;
+  font-family: $open-sans;
+  margin-bottom: 2em;
+  width: 40%;
 
-      .fa-location-dot {
-        margin-right: 1.23em;
-      }
-      span {
-        font-size: 0.875em;
-        color: $header-light-grey;
-        letter-spacing: 1px;
-      }
+  .get-in-contact-info-box {
+    @include flex-align-center;
+    margin: 1em;
+
+    .contact-icons {
+      font-size: 1.875em;
+      color: $logo-color;
+      margin-right: 1em;
+    }
+
+    .fa-location-dot {
+      margin-right: 1.23em;
+    }
+    span {
+      font-size: 0.875em;
+      color: $header-light-grey;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.contact-form-hr {
+  display: none;
+}
+
+.get-in-touch-contact {
+  @include flex-center-all;
+  padding-top: 5.25em;
+}
+
+@media (max-width: $max-tablets) {
+  #get-in-touch {
+    font-size: 15px;
+  }
+  .get-in-touch-contact {
+    flex-direction: column;
+  }
+
+  .contact-form-hr {
+    display: block;
+    border: none;
+    border-top: 1px solid $header-background-color;
+    width: 90%;
+    margin: 2em;
+  }
+  .get-in-contact-info {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  #get-in-touch {
+    font-size: 12px;
+  }
+
+  .get-in-touch-inputs {
+    @include flex-center-all($direction: column);
+  }
+  .get-in-touch-form {
+    .input-name,
+    .input-email {
+      margin: 0.3em 0;
+      width: 100%;
     }
   }
 }

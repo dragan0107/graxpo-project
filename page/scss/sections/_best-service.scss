@@ -50,3 +50,13 @@
     padding: 0;
   }
 }
+
+@media (max-width: $max-mobile) {
+  #best-service {
+    font-size: 12px;
+  }
+
+  .best-service-text {
+    font-size: 12;
+  }
+}

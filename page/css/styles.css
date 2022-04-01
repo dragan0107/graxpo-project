@@ -17,7 +17,7 @@
   font-family: "Open Sans", sans-serif;
   color: #333b46;
   text-align: center;
-  z-index: 1;
+  z-index: 10;
 }
 #header-section .centered-text h1 {
   font-size: 2.1875em;
@@ -28,7 +28,8 @@
   font-weight: 300;
   letter-spacing: 5px;
 }
-#header-section .scroll-box {
+
+.scroll-box {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -37,9 +38,11 @@
   height: auto;
   bottom: 5.2em;
   left: 50%;
+  right: 50%;
+  text-align: center;
   cursor: pointer;
 }
-#header-section .scroll-box span {
+.scroll-box span {
   margin-top: 1em;
   font-size: 0.75em;
   color: #e84c3d;
@@ -97,6 +100,7 @@ header nav {
 }
 .header-content img {
   position: absolute;
+  max-width: 40%;
 }
 .header-content .headphones {
   top: 9.75em;
@@ -158,7 +162,6 @@ header nav {
     opacity: 0;
     position: absolute;
     flex-direction: column;
-    z-index: 0;
     background-color: #636c79;
     width: 100%;
     transition: all 0.2s ease-in;
@@ -177,12 +180,48 @@ header nav {
 
   .nav-links.active {
     opacity: 1;
-    z-index: 5;
+    z-index: 15;
   }
 }
 @media (max-width: 768px) {
   #brand-logo {
     margin-left: 10%;
+  }
+
+  .scroll-box {
+    bottom: 2em;
+  }
+}
+@media (max-width: 480px) {
+  #header-section {
+    font-size: 14px;
+  }
+
+  .header-content .eye-glasses {
+    display: none;
+  }
+  .header-content .juice-glass {
+    top: 7em;
+    right: 1em;
+    z-index: 1;
+    width: 20%;
+  }
+  .header-content .cork {
+    top: 7em;
+    right: 1em;
+    width: 25%;
+  }
+  .header-content .headphones {
+    top: 4em;
+  }
+  .header-content .pen-holder {
+    width: 25%;
+    right: 1.5em;
+    bottom: 4em;
+  }
+  .header-content .mouse-img {
+    bottom: 12em;
+    left: 2em;
   }
 }
 #about-us {
@@ -587,6 +626,15 @@ h2 {
 
   .service-box-right {
     padding: 0;
+  }
+}
+@media (max-width: 480px) {
+  #best-service {
+    font-size: 12px;
+  }
+
+  .best-service-text {
+    font-size: 12;
   }
 }
 #create-business {
@@ -1107,39 +1155,9 @@ article {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 6.75em;
+  padding-top: 6.25em;
   padding-bottom: 5.75em;
   background: #f3f3f3;
-}
-#get-in-touch .get-in-touch-contact {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  padding-top: 5.375em;
-}
-#get-in-touch .get-in-touch-form .input-name,
-#get-in-touch .get-in-touch-form .input-email,
-#get-in-touch .get-in-touch-form textarea {
-  font-family: "Open Sans", sans-serif;
-  outline: none;
-  padding: 0.9em;
-  border: 3px solid #ebebeb;
-  background: none;
-  color: #81868e;
-}
-#get-in-touch .get-in-touch-form textarea {
-  resize: none;
-}
-#get-in-touch .get-in-touch-form input {
-  width: 16.75em;
-  height: 3.125em;
-}
-#get-in-touch .get-in-touch-form .input-name {
-  margin-right: 1em;
-}
-#get-in-touch .get-in-touch-form .input-email {
-  margin-left: 1em;
 }
 #get-in-touch .get-in-touch-inputs {
   margin-bottom: 1.375em;
@@ -1163,7 +1181,32 @@ article {
 #get-in-touch .get-in-touch-area-btn button:hover {
   background: #f56d61;
 }
-#get-in-touch .get-in-contact-info {
+
+.get-in-touch-form .input-name,
+.get-in-touch-form .input-email,
+.get-in-touch-form textarea {
+  font-family: "Open Sans", sans-serif;
+  outline: none;
+  padding: 0.9em;
+  border: 3px solid #ebebeb;
+  background: none;
+  color: #81868e;
+}
+.get-in-touch-form textarea {
+  resize: none;
+}
+.get-in-touch-form input {
+  width: 16.75em;
+  height: 3.125em;
+}
+.get-in-touch-form .input-name {
+  margin-right: 1em;
+}
+.get-in-touch-form .input-email {
+  margin-left: 1em;
+}
+
+.get-in-contact-info {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -1172,26 +1215,77 @@ article {
   margin-bottom: 2em;
   width: 40%;
 }
-#get-in-touch .get-in-contact-info .get-in-contact-info-box {
+.get-in-contact-info .get-in-contact-info-box {
   display: flex;
   align-items: center;
   flex-direction: row;
   margin: 1em;
 }
-#get-in-touch .get-in-contact-info .get-in-contact-info-box .contact-icons {
+.get-in-contact-info .get-in-contact-info-box .contact-icons {
   font-size: 1.875em;
   color: #e84c3d;
   margin-right: 1em;
 }
-#get-in-touch .get-in-contact-info .get-in-contact-info-box .fa-location-dot {
+.get-in-contact-info .get-in-contact-info-box .fa-location-dot {
   margin-right: 1.23em;
 }
-#get-in-touch .get-in-contact-info .get-in-contact-info-box span {
+.get-in-contact-info .get-in-contact-info-box span {
   font-size: 0.875em;
   color: #81868e;
   letter-spacing: 1px;
 }
 
+.contact-form-hr {
+  display: none;
+}
+
+.get-in-touch-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-top: 5.25em;
+}
+
+@media (max-width: 768px) {
+  #get-in-touch {
+    font-size: 15px;
+  }
+
+  .get-in-touch-contact {
+    flex-direction: column;
+  }
+
+  .contact-form-hr {
+    display: block;
+    border: none;
+    border-top: 1px solid #e0e0e0;
+    width: 90%;
+    margin: 2em;
+  }
+
+  .get-in-contact-info {
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  #get-in-touch {
+    font-size: 12px;
+  }
+
+  .get-in-touch-inputs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .get-in-touch-form .input-name,
+.get-in-touch-form .input-email {
+    margin: 0.3em 0;
+    width: 100%;
+  }
+}
 #footer {
   display: flex;
   justify-content: center;
@@ -1443,6 +1537,6 @@ article {
 
 @media (max-width: 480px) {
   .section-desc {
-    font-size: 15px;
+    font-size: 13px;
   }
 }
