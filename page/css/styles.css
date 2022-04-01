@@ -337,7 +337,7 @@ header nav {
 }
 @media (max-width: 320px) {
   #what-we-do {
-    font-size: 6px;
+    font-size: 10px;
   }
 }
 #views {
@@ -686,17 +686,28 @@ h2 {
   padding-top: 10%;
   background: #f3f3f3;
 }
-#portfolio .portfolio-categories {
+
+.portfolio-categories {
   width: 40%;
   margin-top: 5em;
   font-size: 1em;
   font-weight: 500;
   font-family: "Open Sans", sans-serif;
+  cursor: pointer;
 }
-#portfolio .portfolio-categories .portfolio-categ-list {
+
+.portfolio-categ-list {
   display: flex;
   justify-content: space-around;
   list-style: none;
+}
+
+.categ-name {
+  padding-bottom: 1em;
+}
+
+.active-categ {
+  border-bottom: 3px solid #333b46;
 }
 
 @media (max-width: 1000px) {

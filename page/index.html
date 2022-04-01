@@ -356,35 +356,21 @@
       </div>
       <div class="portfolio-categories">
         <ul class="portfolio-categ-list">
-          <li class="categ-name" onclick="sortCateg('all')">All Categories</li>
-          <span class="categ-separator">/</span>
-          <li
-            class="categ-name"
-            onclick="sortCateg('grid-item-1','grid-item-2','grid-item-3')"
-          >
-            Print
+          <li class="active-categ categ-name" onclick="sortCateg('grid-item')">
+            All Categories
           </li>
           <span class="categ-separator">/</span>
-          <li
-            class="categ-name"
-            onclick="sortCateg('grid-item-4','grid-item-5','grid-item-6')"
-          >
+          <li class="categ-name" onclick="sortCateg('categ-print')">Print</li>
+          <span class="categ-separator">/</span>
+          <li class="categ-name" onclick="sortCateg('categ-identity')">
             Identity
           </li>
           <span class="categ-separator">/</span>
-          <li
-            class="categ-name"
-            onclick="sortCateg('grid-item-8','grid-item-12','grid-item-9')"
-          >
+          <li class="categ-name" onclick="sortCateg('categ-branding')">
             Branding
           </li>
           <span class="categ-separator">/</span>
-          <li
-            class="categ-name"
-            onclick="sortCateg('grid-item-10','grid-item-11','grid-item-5')"
-          >
-            Web
-          </li>
+          <li class="categ-name" onclick="sortCateg('categ-web')">Web</li>
         </ul>
       </div>
       <!-- <div id="port-grid" class="portfolio-grid">
@@ -499,7 +485,7 @@
         </div>
       </div> -->
       <div id="port-grid" class="grid">
-        <div class="grid-item grid-item-1">
+        <div class="categ-print grid-item grid-item-1">
           <img src="./images/portfolio-grid/p-img1.png" alt="" />
           <div class="grid-hover-box">
             <div>
@@ -509,7 +495,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-item grid-item-3">
+        <div class="categ-web grid-item grid-item-3">
           <img src="./images/portfolio-grid/p-img3.png" alt="" />
           <div class="grid-hover-box">
             <div>
@@ -519,7 +505,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-item grid-item-2">
+        <div class="categ-print grid-item grid-item-2">
           <img src="./images/portfolio-grid/p-img2.png" alt="" />
           <div class="grid-hover-box">
             <div>
@@ -529,7 +515,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-item grid-item-4">
+        <div class="categ-identity grid-item grid-item-4">
           <img src="./images/portfolio-grid/p-img4.png" alt="" />
           <div class="grid-hover-box">
             <div>
@@ -539,7 +525,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-item grid-item-5">
+        <div class="categ-identity grid-item grid-item-5">
           <img src="./images/portfolio-grid/p-img5.png" alt="" />
           <div class="grid-hover-box">
             <div>
@@ -549,7 +535,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-item grid-item-6">
+        <div class="categ-identity grid-item grid-item-6">
           <div class="grid-img-box">
             <img src="./images/portfolio-grid/p-img6.png" alt="" />
             <div class="grid-hover-box">
@@ -571,7 +557,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-item grid-item-8">
+        <div class="categ-branding grid-item grid-item-8">
           <img src="./images/portfolio-grid/p-img8.png" alt="" />
           <div class="grid-hover-box">
             <div>
@@ -581,7 +567,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-item grid-item-12">
+        <div class="categ-branding grid-item grid-item-12">
           <img class="img11" src="./images/portfolio-grid/p-img11.png" alt="" />
           <div class="grid-hover-box">
             <div>
@@ -591,7 +577,7 @@
             </div>
           </div>
         </div>
-        <div class="grid-item grid-item-9">
+        <div class="categ-web grid-item grid-item-9">
           <div class="grid-img-box">
             <img class="img9" src="./images/portfolio-grid/p-img9.png" alt="" />
             <div class="grid-hover-box">
@@ -602,7 +588,7 @@
               </div>
             </div>
           </div>
-          <div class="grid-img-box">
+          <div class="categ-web grid-img-box">
             <img src="./images/portfolio-grid/p-img10.png" alt="" />
             <div class="grid-hover-box">
               <div>
@@ -614,7 +600,7 @@
           </div>
         </div>
 
-        <div class="grid-item grid-item-11">
+        <div class="categ-print grid-item grid-item-11">
           <img src="./images/portfolio-grid/p-img12.png" alt="" />
           <div class="grid-hover-box">
             <div>

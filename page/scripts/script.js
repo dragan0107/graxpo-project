@@ -1,3 +1,5 @@
+// Carousel functionality
+
 let initialSlide = 1;
 setSlide(initialSlide);
 
@@ -37,15 +39,15 @@ function selectSlide(n) {
   startInterval();
 }
 
+// Function for smooth scrolling to different sections.
 function jumpToSection(id) {
   document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
 }
 
 // The observer is checking whether the 'views' section is intersecting, if yes, start the animation.
 const views = document.getElementById('views');
-const options = {};
 
-const observer = new IntersectionObserver(function (entries, observer) {
+const observer = new IntersectionObserver(function (entries) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
       const counters = document.querySelectorAll('.views-counter');
@@ -68,46 +70,45 @@ const observer = new IntersectionObserver(function (entries, observer) {
       });
     }
   });
-}, options);
+});
 
 observer.observe(views);
 
-// Grid manipulation
+// MasonryJS grid functionality.
 
 let msnry;
-
-window.onload = () => {
-  const grid = document.querySelector('.grid');
-
-  msnry = new Masonry(grid, {
-    itemSelector: '.grid-item',
-    gutter: 0,
-  });
+let msnryOptions = {
+  itemSelector: '',
+  gutter: 0,
 };
 
-let gridElems = document.querySelector('.grid');
+let grid = document.querySelector('.grid');
+window.onload = () => {
+  msnry = new Masonry(grid);
+};
 
-let children = Array.from(gridElems.children);
-
-let childrenCopy = [];
-for (let i = 0; i < children.length; i++) {
-  let clone = children[i].cloneNode(true);
-  childrenCopy.push(clone);
-}
-
-function sortCateg() {
-  let elems = [...arguments];
+function sortCateg(category) {
+  grid = document.querySelector('.grid');
+  let children = Array.from(grid.children);
+  resetGrid(children);
 
   for (let i = 0; i < children.length; i++) {
-    elems.forEach((elem) => {
-      if (children[i].classList.contains(elem)) {
-        children.splice(i, 1);
-      }
-    });
+    if (!children[i].classList.contains(category)) {
+      children[i].style.display = 'none';
+    }
   }
-  msnry.remove(children);
+  msnryOptions.itemSelector = category;
   msnry.layout();
 }
+
+// Grid reset function
+function resetGrid(children) {
+  for (let i = 0; i < children.length; i++) {
+    children[i].style.display = 'block';
+  }
+}
+
+// Hamburger menu controller
 
 const hamburger = document.querySelector('.hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
@@ -115,3 +116,14 @@ const navLinks = document.querySelector('.nav-links');
 hamburger.addEventListener('click', () => {
   navLinks.classList.toggle('active');
 });
+
+// Add active class to current portfolio category
+
+let listItems = document.querySelectorAll('.categ-name');
+for (let i = 0; i < listItems.length; i++) {
+  listItems[i].addEventListener('click', (e) => {
+    let current = document.getElementsByClassName('active-categ');
+    current[0].classList.remove('active-categ');
+    e.target.classList.add('active-categ');
+  });
+}

@@ -2,20 +2,26 @@
   @include flex-center-all($direction: column);
   padding-top: 10%;
   background: $about-us-white;
+}
+.portfolio-categories {
+  width: 40%;
+  margin-top: 5em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: $open-sans;
+  cursor: pointer;
+}
+.portfolio-categ-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
 
-  .portfolio-categories {
-    width: 40%;
-    margin-top: 5em;
-    font-size: 1em;
-    font-weight: 500;
-    font-family: $open-sans;
-
-    .portfolio-categ-list {
-      display: flex;
-      justify-content: space-around;
-      list-style: none;
-    }
-  }
+.categ-name {
+  padding-bottom: 1em;
+}
+.active-categ {
+  border-bottom: 3px solid $dark-blue;
 }
 
 @media (max-width: $max-medium) {
