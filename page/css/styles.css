@@ -520,6 +520,9 @@ h2 {
   padding-top: 6.75em;
   background: #f3f3f3;
 }
+#best-service img {
+  min-width: 30%;
+}
 
 .best-service-images {
   display: flex;
@@ -531,19 +534,9 @@ h2 {
   width: 100%;
 }
 
-img {
-  min-width: 30%;
-}
-
 .best-service-desc {
   max-width: 55%;
   padding: 5%;
-}
-
-.service-box-right {
-  flex-direction: row-reverse;
-  margin: 0;
-  padding-left: 6.1em;
 }
 
 .best-service-box {
@@ -553,9 +546,18 @@ img {
   justify-content: space-between;
 }
 
+.service-box-right {
+  flex-direction: row-reverse;
+  margin: 0;
+  padding-left: 6.1em;
+}
+
 @media (max-width: 769px) {
   #best-service {
     font-size: 16px;
+  }
+  #best-service img {
+    width: 100%;
   }
 
   .best-service-desc {
@@ -569,10 +571,6 @@ img {
 
   .service-box-right {
     padding: 0;
-  }
-
-  img {
-    width: 100%;
   }
 }
 #create-business {
@@ -621,11 +619,11 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding-top: 6em;
+  padding-top: 10%;
   background: #f3f3f3;
 }
 #portfolio .portfolio-categories {
-  width: 30%;
+  width: 40%;
   margin-top: 5em;
   font-size: 1em;
   font-weight: 500;
@@ -637,6 +635,16 @@ img {
   list-style: none;
 }
 
+@media (max-width: 1000px) {
+  #portfolio .portfolio-categories {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #portfolio {
+    font-size: 14px;
+  }
+}
 #subscribe {
   display: flex;
   justify-content: center;
@@ -689,6 +697,25 @@ img {
   cursor: pointer;
 }
 
+@media (max-width: 769px) {
+  #subscribe {
+    flex-direction: column;
+    font-size: 15px;
+  }
+  #subscribe .subscribe-desc {
+    width: 90%;
+  }
+  #subscribe .subscribe-desc .section-desc {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3%;
+  }
+  #subscribe .subscribe-desc .section-desc .subscribe-text {
+    width: 80%;
+    text-align: center;
+  }
+}
 #meet-crew {
   display: flex;
   justify-content: center;
@@ -1116,7 +1143,6 @@ img {
 .grid {
   width: 70%;
   margin-top: 3.3em;
-  height: 60%;
 }
 
 .grid-item {
@@ -1192,6 +1218,27 @@ img {
   position: relative;
 }
 
+@media (max-width: 769px) {
+  .grid {
+    width: 95%;
+    font-size: 12px;
+  }
+
+  .grid-hover-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .grid-hover-box .grid-hover-title {
+    font-size: 0.7em;
+    margin-bottom: 0.3em;
+  }
+  .grid-hover-box .grid-hover-subtitle {
+    font-size: 0.5em;
+    margin-bottom: 0.3em;
+  }
+}
 .what-we-do-card {
   display: flex;
   justify-content: center;
@@ -1302,7 +1349,7 @@ img {
 .white-line {
   height: 3px;
   width: 46px;
-  margin: 1.5em 0 2em 0;
+  margin: 3% 0 5% 0;
 }
 
 .section-line {
@@ -1316,4 +1363,10 @@ img {
 .section-left-align {
   align-items: flex-start;
   text-align: left;
+}
+
+.section-desc-center {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }

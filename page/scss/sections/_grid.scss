@@ -1,7 +1,7 @@
 .grid {
   width: 70%;
   margin-top: 3.3em;
-  height: 60%;
+  // height: 60%;
 }
 .grid-item {
   @include flex-center-all;
@@ -67,3 +67,25 @@
 .grid-img-box {
   position: relative;
 }
+
+@media (max-width: $max-tablets) {
+  .grid {
+    width: 95%;
+    font-size: 12px;
+  }
+
+  .grid-hover-box {
+    @include flex-center-all($direction: column);
+    .grid-hover-title {
+      font-size: 0.7em;
+      margin-bottom: 0.3em;
+    }
+
+    .grid-hover-subtitle {
+      font-size: 0.5em;
+      margin-bottom: 0.3em;
+    }
+  }
+}
+
+// @media (max-width: $max-mobile);

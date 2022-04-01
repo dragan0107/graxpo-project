@@ -28,7 +28,7 @@
 .white-line {
   height: 3px;
   width: 46px;
-  margin: 1.5em 0 2em 0;
+  margin: 3% 0 5% 0;
 }
 
 .section-line {
@@ -42,4 +42,8 @@
 .section-left-align {
   align-items: flex-start;
   text-align: left;
+}
+
+.section-desc-center {
+  @include flex-align-center($direction: column);
 }

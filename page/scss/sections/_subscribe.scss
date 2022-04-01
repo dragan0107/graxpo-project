@@ -49,3 +49,24 @@
     }
   }
 }
+
+@media (max-width: $max-tablets) {
+  #subscribe {
+    flex-direction: column;
+    font-size: 15px;
+
+    .subscribe-desc {
+      width: 90%;
+
+      .section-desc {
+        @include flex-align-center($direction: column);
+        margin-bottom: 3%;
+
+        .subscribe-text {
+          width: 80%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

@@ -2,6 +2,9 @@
   @include flex-center-all($direction: column);
   @include standard-padding-top;
   background: $about-us-white;
+  img {
+    min-width: 30%;
+  }
 }
 
 .best-service-images {
@@ -11,27 +14,28 @@
   color: white;
   width: 100%;
 }
-img {
-  min-width: 30%;
-}
+
 .best-service-desc {
   max-width: 55%;
   padding: 5%;
 }
 
+.best-service-box {
+  @include flex-align-center;
+  justify-content: space-between;
+}
 .service-box-right {
   flex-direction: row-reverse;
   margin: 0;
   padding-left: 6.1em;
 }
-.best-service-box {
-  @include flex-align-center;
-  justify-content: space-between;
-}
 
 @media (max-width: $max-tablets) {
   #best-service {
     font-size: 16px;
+    img {
+      width: 100%;
+    }
   }
   .best-service-desc {
     max-width: 90%;
@@ -44,8 +48,5 @@ img {
 
   .service-box-right {
     padding: 0;
-  }
-  img {
-    width: 100%;
   }
 }
