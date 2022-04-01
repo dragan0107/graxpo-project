@@ -4,21 +4,6 @@
   background-size: cover;
   height: 19.125em;
 
-  .subscribe-desc {
-    width: 45%;
-    color: white;
-
-    .subscribe-text {
-      line-height: 2em;
-      font-weight: 300;
-    }
-
-    .subscribe-line {
-      width: 57px;
-      height: 2px;
-    }
-  }
-
   .subscribe-input {
     @include flex-center-all;
     font-family: $open-sans;
@@ -35,7 +20,7 @@
     .subscribe-input-box {
       outline: none;
       background: none;
-      width: 274px;
+      width: 17.125em;
     }
     ::placeholder {
       color: white;
@@ -50,23 +35,45 @@
   }
 }
 
+.subscribe-desc {
+  width: 45%;
+  color: white;
+
+  .subscribe-text {
+    line-height: 2em;
+    font-weight: 300;
+  }
+
+  .subscribe-line {
+    width: 57px;
+    height: 2px;
+  }
+}
+
 @media (max-width: $max-tablets) {
   #subscribe {
     flex-direction: column;
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .subscribe-desc {
+    width: 90%;
 
-    .subscribe-desc {
-      width: 90%;
+    .section-desc {
+      @include flex-align-center($direction: column);
+      margin-bottom: 3%;
 
-      .section-desc {
-        @include flex-align-center($direction: column);
-        margin-bottom: 3%;
-
-        .subscribe-text {
-          width: 80%;
-          text-align: center;
-        }
+      .subscribe-text {
+        width: 80%;
+        text-align: center;
       }
+    }
+  }
+}
+
+@media (max-width: 361px) {
+  #subscribe {
+    .subscribe-desc-box {
+      font-size: 13px;
     }
   }
 }

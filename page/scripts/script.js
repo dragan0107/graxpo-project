@@ -48,7 +48,6 @@ const options = {};
 const observer = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
     if (entry.isIntersecting) {
-      console.log(entry);
       const counters = document.querySelectorAll('.views-counter');
       const divider = 400; // Value we divide the full number with, the higher it is, the slower the counting up gets.
 
@@ -75,25 +74,6 @@ observer.observe(views);
 
 // Grid manipulation
 
-// function changeGrid(className) {
-//   const gridItems = document.querySelector('.portfolio-grid');
-
-//   if (className !== 'all') {
-//     for (let i = 0; i < gridItems.children.length; i++) {
-//       const child = gridItems.children[i];
-//       child.style.opacity = 'flex';
-//       if (!child.classList.contains(className)) {
-//         child.style.opacity = 'none';
-//         // console.log(true);
-//       }
-//     }
-//   } else {
-//     for (let i = 0; i < gridItems.children.length; i++) {
-//       const child = gridItems.children[i];
-//       child.style.display = 'flex';
-//     }
-//   }
-// }
 let msnry;
 
 window.onload = () => {

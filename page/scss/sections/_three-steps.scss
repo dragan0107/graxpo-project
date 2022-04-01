@@ -71,6 +71,7 @@
   }
   .three-steps-cards {
     flex-direction: column;
+    font-size: 15px;
   }
 
   .three-cards-strikethrough {
@@ -79,5 +80,16 @@
 
   .three-steps-card {
     margin: 1em;
+  }
+
+  .three-steps-desc {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: $max-mobile) {
+  .three-steps-cards {
+    flex-direction: column;
+    font-size: 12px;
   }
 }

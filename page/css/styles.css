@@ -180,7 +180,7 @@ header nav {
     z-index: 5;
   }
 }
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   #brand-logo {
     margin-left: 10%;
   }
@@ -276,9 +276,9 @@ header nav {
   width: 100%;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   #what-we-do {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .what-we-do-cards {
@@ -288,12 +288,17 @@ header nav {
 }
 @media (max-width: 480px) {
   #what-we-do {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .what-we-do-cards {
     flex-direction: column;
     padding: 2% 5%;
+  }
+}
+@media (max-width: 320px) {
+  #what-we-do {
+    font-size: 6px;
   }
 }
 #views {
@@ -438,13 +443,14 @@ h2 {
   z-index: 0;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   #three-steps {
     padding: 10% 5%;
   }
 
   .three-steps-cards {
     flex-direction: column;
+    font-size: 15px;
   }
 
   .three-cards-strikethrough {
@@ -453,6 +459,16 @@ h2 {
 
   .three-steps-card {
     margin: 1em;
+  }
+
+  .three-steps-desc {
+    font-size: 16px;
+  }
+}
+@media (max-width: 480px) {
+  .three-steps-cards {
+    flex-direction: column;
+    font-size: 12px;
   }
 }
 #featured-work {
@@ -552,7 +568,7 @@ h2 {
   padding-left: 6.1em;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   #best-service {
     font-size: 16px;
   }
@@ -562,7 +578,7 @@ h2 {
 
   .best-service-desc {
     max-width: 90%;
-    padding: 2%;
+    padding: 5%;
   }
 
   .best-service-box {
@@ -654,18 +670,6 @@ h2 {
   background-size: cover;
   height: 19.125em;
 }
-#subscribe .subscribe-desc {
-  width: 45%;
-  color: white;
-}
-#subscribe .subscribe-desc .subscribe-text {
-  line-height: 2em;
-  font-weight: 300;
-}
-#subscribe .subscribe-desc .subscribe-line {
-  width: 57px;
-  height: 2px;
-}
 #subscribe .subscribe-input {
   display: flex;
   justify-content: center;
@@ -685,7 +689,7 @@ h2 {
 #subscribe .subscribe-input .subscribe-input-box {
   outline: none;
   background: none;
-  width: 274px;
+  width: 17.125em;
 }
 #subscribe .subscribe-input ::placeholder {
   color: white;
@@ -697,23 +701,42 @@ h2 {
   cursor: pointer;
 }
 
-@media (max-width: 769px) {
+.subscribe-desc {
+  width: 45%;
+  color: white;
+}
+.subscribe-desc .subscribe-text {
+  line-height: 2em;
+  font-weight: 300;
+}
+.subscribe-desc .subscribe-line {
+  width: 57px;
+  height: 2px;
+}
+
+@media (max-width: 768px) {
   #subscribe {
     flex-direction: column;
-    font-size: 15px;
+    font-size: 14px;
   }
-  #subscribe .subscribe-desc {
+
+  .subscribe-desc {
     width: 90%;
   }
-  #subscribe .subscribe-desc .section-desc {
+  .subscribe-desc .section-desc {
     display: flex;
     align-items: center;
     flex-direction: column;
     margin-bottom: 3%;
   }
-  #subscribe .subscribe-desc .section-desc .subscribe-text {
+  .subscribe-desc .section-desc .subscribe-text {
     width: 80%;
     text-align: center;
+  }
+}
+@media (max-width: 361px) {
+  #subscribe .subscribe-desc-box {
+    font-size: 13px;
   }
 }
 #meet-crew {
@@ -817,7 +840,7 @@ h2 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 681px;
-  padding: 5.625em;
+  padding: 5%;
   transition: all 0.2s ease-in-out;
 }
 #testimonials .testimonials-desc {
@@ -888,6 +911,14 @@ h2 {
   height: 154px;
 }
 
+@media (max-width: 480px) {
+  #testimonials {
+    font-size: 14px;
+  }
+  #testimonials .testimonials-carousel-item p {
+    width: 90%;
+  }
+}
 #latest-blog {
   display: flex;
   justify-content: center;
@@ -896,7 +927,8 @@ h2 {
   padding-top: 6.75em;
   background: #f3f3f3;
 }
-#latest-blog .blog-cards {
+
+.blog-cards {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -904,19 +936,57 @@ h2 {
   margin-top: 5.35em;
   width: 60%;
 }
-#latest-blog .blog-cards .blog-card {
-  background: url("/page/images/latest-blog/blog2.png");
+.blog-cards .blog-card-about {
+  font-family: "Roboto", sans-serif;
+}
+.blog-cards .blog-card-about h1 {
+  font-size: 1em;
+  letter-spacing: 1px;
+}
+.blog-cards .blog-card-about p {
+  font-size: 0.875em;
+  font-weight: 300;
+  margin-top: 0.7em;
+}
+.blog-cards .blog-card-about .blog-card-line {
+  border: none;
+  height: 3px;
+  width: 46px;
+  background: white;
+  margin: 1.5em 0 2em 0;
+}
+.blog-cards .blog-card-text {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8em;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.blog-cards .blog-card-date-box {
+  margin-top: 1.4em;
+}
+
+article {
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.blog-card {
+  background: url("/page/images/latest-blog/blog2.png");
   height: 390px;
   width: 100%;
   position: relative;
   margin: 1em;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#latest-blog .blog-cards .blog-card2 {
+
+.blog-card2 {
   background: url("/page/images/latest-blog/blog1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-#latest-blog .blog-cards .blog-card-desc {
+
+.blog-card-desc {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -932,38 +1002,27 @@ h2 {
   cursor: pointer;
   transition: all 0.2s ease-in-out;
 }
-#latest-blog .blog-cards .blog-card-desc:hover {
+.blog-card-desc:hover {
   opacity: 1;
 }
-#latest-blog .blog-cards .blog-card-about {
-  font-family: "Roboto", sans-serif;
-}
-#latest-blog .blog-cards .blog-card-about h1 {
-  font-size: 1em;
-  letter-spacing: 1px;
-}
-#latest-blog .blog-cards .blog-card-about p {
-  font-size: 0.875em;
-  font-weight: 300;
-  margin-top: 0.7em;
-}
-#latest-blog .blog-cards .blog-card-about .blog-card-line {
-  border: none;
-  height: 3px;
-  width: 46px;
-  background: white;
-  margin: 1.5em 0 2em 0;
-}
-#latest-blog .blog-cards .blog-card-text {
-  font-family: "Open Sans", sans-serif;
-  font-size: 0.8em;
-  font-weight: 400;
-  letter-spacing: 1px;
-}
-#latest-blog .blog-cards .blog-card-date-box {
-  margin-top: 1.4em;
-}
 
+@media (max-width: 1000px) {
+  .blog-cards {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+@media (max-width: 480px) {
+  .blog-cards {
+    font-size: 14px;
+  }
+
+  .blog-card-desc {
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+  }
+}
 #pricing {
   display: flex;
   justify-content: center;
@@ -986,8 +1045,8 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 482px;
-  width: 323px;
+  height: 30em;
+  width: 20em;
   border: 1px solid #d7d7d7;
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
@@ -1038,6 +1097,11 @@ h2 {
   box-shadow: 1px 5px 15px 9px #d4d4d4;
 }
 
+@media (max-width: 480px) {
+  #pricing {
+    font-size: 14px;
+  }
+}
 #get-in-touch {
   display: flex;
   justify-content: center;
@@ -1218,10 +1282,10 @@ h2 {
   position: relative;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 768px) {
   .grid {
-    width: 95%;
-    font-size: 12px;
+    width: 100%;
+    font-size: 16px;
   }
 
   .grid-hover-box {
@@ -1231,12 +1295,17 @@ h2 {
     flex-direction: column;
   }
   .grid-hover-box .grid-hover-title {
-    font-size: 0.7em;
+    font-size: 0.8em;
     margin-bottom: 0.3em;
   }
   .grid-hover-box .grid-hover-subtitle {
-    font-size: 0.5em;
+    font-size: 0.6em;
     margin-bottom: 0.3em;
+  }
+}
+@media (max-width: 480px) {
+  .grid {
+    font-size: 10px;
   }
 }
 .what-we-do-card {
@@ -1369,4 +1438,11 @@ h2 {
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .section-desc {
+    font-size: 15px;
+  }
 }

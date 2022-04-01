@@ -20,7 +20,7 @@
 
 @media (max-width: $max-tablets) {
   #what-we-do {
-    font-size: 16px;
+    font-size: 15px;
   }
 
   .what-we-do-cards {
@@ -31,11 +31,17 @@
 
 @media (max-width: $max-mobile) {
   #what-we-do {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .what-we-do-cards {
     flex-direction: column;
     padding: 2% 5%;
+  }
+}
+
+@media (max-width: $min-mobile) {
+  #what-we-do {
+    font-size: 6px;
   }
 }

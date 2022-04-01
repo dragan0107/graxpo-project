@@ -2,71 +2,96 @@
   @include flex-center-all($direction: column);
   @include standard-padding-top;
   background: $about-us-white;
+}
+.blog-cards {
+  @include flex-center-all;
+  margin-top: 5.35em;
+  width: 60%;
 
-  .blog-cards {
-    @include flex-center-all;
-    margin-top: 5.35em;
-    width: 60%;
-    .blog-card {
-      background: url('/page/images/latest-blog/blog2.png');
-      background-repeat: no-repeat;
-      background-size: cover;
-      height: 390px;
-      width: 100%;
-      position: relative;
-      margin: 1em;
-    }
-    .blog-card2 {
-      background: url('/page/images/latest-blog/blog1.png');
-    }
-    .blog-card-desc {
-      @include flex-justify-center($direction: column);
-      align-content: flex-start;
-      position: absolute;
-      height: 100%;
-      width: 50%;
-      right: 0;
-      background: $logo-color;
-      color: white;
-      padding: 1em;
-      opacity: 0;
-      cursor: pointer;
-      transition: all 0.2s ease-in-out;
-
-      &:hover {
-        opacity: 1;
-      }
-    }
-
-    .blog-card-about {
-      font-family: $roboto;
-      h1 {
-        font-size: 1em;
-        letter-spacing: 1px;
-      }
-      p {
-        font-size: 0.875em;
-        font-weight: 300;
-        margin-top: 0.7em;
-      }
-      .blog-card-line {
-        border: none;
-        height: 3px;
-        width: 46px;
-        background: white;
-        margin: 1.5em 0 2em 0;
-      }
-    }
-
-    .blog-card-text {
-      font-family: $open-sans;
-      font-size: 0.8em;
-      font-weight: 400;
+  .blog-card-about {
+    font-family: $roboto;
+    h1 {
+      font-size: 1em;
       letter-spacing: 1px;
     }
-
-    .blog-card-date-box {
-      margin-top: 1.4em;
+    p {
+      font-size: 0.875em;
+      font-weight: 300;
+      margin-top: 0.7em;
     }
+    .blog-card-line {
+      border: none;
+      height: 3px;
+      width: 46px;
+      background: white;
+      margin: 1.5em 0 2em 0;
+    }
+  }
+
+  .blog-card-text {
+    font-family: $open-sans;
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+
+  .blog-card-date-box {
+    margin-top: 1.4em;
+  }
+}
+
+article {
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.blog-card {
+  background: url('/page/images/latest-blog/blog2.png');
+  height: 390px;
+  width: 100%;
+  position: relative;
+  margin: 1em;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-card2 {
+  background: url('/page/images/latest-blog/blog1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.blog-card-desc {
+  @include flex-justify-center($direction: column);
+  align-content: flex-start;
+  position: absolute;
+  height: 100%;
+  width: 50%;
+  right: 0;
+  background: $logo-color;
+  color: white;
+  padding: 1em;
+  opacity: 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: $max-medium) {
+  .blog-cards {
+    flex-direction: column;
+    width: 90%;
+  }
+}
+
+@media (max-width: $max-mobile) {
+  .blog-cards {
+    font-size: 14px;
+  }
+  .blog-card-desc {
+    width: 100%;
+    height: 50%;
+    bottom: 0;
   }
 }
