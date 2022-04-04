@@ -85,5 +85,10 @@
 @media (max-width: $max-mobile) {
   .what-we-do-card {
     width: 97%;
+    flex-direction: column;
+    .what-card-desc {
+      margin-top: 1.2em;
+      margin-left: 0.5em;
+    }
   }
 }

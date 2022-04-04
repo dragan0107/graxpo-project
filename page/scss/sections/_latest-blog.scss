@@ -51,11 +51,13 @@ article {
   width: 100%;
   position: relative;
   margin: 1em;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 .blog-card2 {
   background: url('/page/images/latest-blog/blog1.png');
+}
+
+.blog-card,
+.blog-card2 {
   background-repeat: no-repeat;
   background-size: cover;
 }

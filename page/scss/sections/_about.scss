@@ -42,16 +42,16 @@
   .about-us-img {
     min-width: 40%;
     @include flex-center-all;
-
-    // img {
-    //   width: 50%;
-    // }
   }
 }
 
 @media (max-width: $max-medium) {
   #about-us {
     flex-direction: column;
+
+    p {
+      padding-right: 0;
+    }
   }
 
   .about-us-img {

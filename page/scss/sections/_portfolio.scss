@@ -36,3 +36,100 @@
     font-size: 14px;
   }
 }
+
+// Grid
+
+.grid {
+  width: 70%;
+  margin-top: 3.3em;
+}
+.grid-item {
+  @include flex-center-all;
+  min-width: 20%;
+  max-width: 28%;
+  position: relative;
+  img {
+    width: 100%;
+  }
+}
+
+.grid-item-6 {
+  @include flex-center-all;
+}
+
+.grid-item-9 {
+  @include flex-justify-center($direction: column);
+}
+
+.grid-hover-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: red;
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  padding: 2em;
+  font-family: $roboto;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.5;
+  }
+  div {
+    @include flex-justify-center($direction: column);
+    text-align: left;
+  }
+
+  .grid-hover-title {
+    font-size: 0.9em;
+    margin-bottom: 0.8em;
+    font-weight: 500;
+  }
+  .grid-hover-subtitle {
+    font-size: 0.7em;
+    font-weight: 300;
+    margin-bottom: 1.2em;
+  }
+  .grid-hover-line {
+    border: none;
+    border-top: 2px solid #c2c2c2;
+    width: 34px;
+  }
+}
+
+.grid-img-box {
+  position: relative;
+}
+
+@media (max-width: $max-tablets) {
+  .grid {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .grid-hover-box {
+    @include flex-center-all($direction: column);
+    .grid-hover-title {
+      font-size: 0.8em;
+      margin-bottom: 0.3em;
+    }
+
+    .grid-hover-subtitle {
+      font-size: 0.6em;
+      margin-bottom: 0.3em;
+    }
+  }
+}
+
+@media (max-width: $max-mobile) {
+  .grid {
+    font-size: 10px;
+  }
+}

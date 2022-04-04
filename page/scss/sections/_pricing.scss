@@ -71,6 +71,10 @@
 
 @media (max-width: $max-mobile) {
   #pricing {
-    font-size: 14px;
+    font-size: 13px;
+    .pricing-card {
+      height: 27em;
+      width: 17em;
+    }
   }
 }

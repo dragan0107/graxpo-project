@@ -166,7 +166,7 @@ header nav {
     width: 100%;
     transition: all 0.2s ease-in;
     padding: 1em;
-    box-shadow: 2px 5px 26px 9px #a6a6a6;
+    box-shadow: 2px 5px 26px 9px #838282;
   }
 
   .nav-link {
@@ -276,6 +276,9 @@ header nav {
   #about-us {
     flex-direction: column;
   }
+  #about-us p {
+    padding-right: 0;
+  }
 
   .about-us-img {
     margin-top: 2em;
@@ -327,7 +330,7 @@ header nav {
 }
 @media (max-width: 480px) {
   #what-we-do {
-    font-size: 12px;
+    font-size: 15px;
   }
 
   .what-we-do-cards {
@@ -337,7 +340,7 @@ header nav {
 }
 @media (max-width: 320px) {
   #what-we-do {
-    font-size: 10px;
+    font-size: 13px;
   }
 }
 #views {
@@ -353,7 +356,7 @@ header nav {
 }
 
 .views-card {
-  width: 12.5em;
+  max-width: 12.5em;
   margin: 1.5em;
 }
 
@@ -675,7 +678,7 @@ h2 {
 
 @media (max-width: 480px) {
   #create-business {
-    font-size: 14px;
+    font-size: 12px;
   }
 }
 #portfolio {
@@ -718,6 +721,110 @@ h2 {
 @media (max-width: 480px) {
   #portfolio {
     font-size: 14px;
+  }
+}
+.grid {
+  width: 70%;
+  margin-top: 3.3em;
+}
+
+.grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-width: 20%;
+  max-width: 28%;
+  position: relative;
+}
+.grid-item img {
+  width: 100%;
+}
+
+.grid-item-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.grid-item-9 {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.grid-hover-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: red;
+  height: 90%;
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  padding: 2em;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  cursor: pointer;
+}
+.grid-hover-box:hover {
+  opacity: 0.5;
+}
+.grid-hover-box div {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: left;
+}
+.grid-hover-box .grid-hover-title {
+  font-size: 0.9em;
+  margin-bottom: 0.8em;
+  font-weight: 500;
+}
+.grid-hover-box .grid-hover-subtitle {
+  font-size: 0.7em;
+  font-weight: 300;
+  margin-bottom: 1.2em;
+}
+.grid-hover-box .grid-hover-line {
+  border: none;
+  border-top: 2px solid #c2c2c2;
+  width: 34px;
+}
+
+.grid-img-box {
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .grid-hover-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .grid-hover-box .grid-hover-title {
+    font-size: 0.8em;
+    margin-bottom: 0.3em;
+  }
+  .grid-hover-box .grid-hover-subtitle {
+    font-size: 0.6em;
+    margin-bottom: 0.3em;
+  }
+}
+@media (max-width: 480px) {
+  .grid {
+    font-size: 10px;
   }
 }
 #subscribe {
@@ -1035,12 +1142,14 @@ article {
   width: 100%;
   position: relative;
   margin: 1em;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .blog-card2 {
   background: url("/page/images/latest-blog/blog1.png");
+}
+
+.blog-card,
+.blog-card2 {
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1158,7 +1267,11 @@ article {
 
 @media (max-width: 480px) {
   #pricing {
-    font-size: 14px;
+    font-size: 13px;
+  }
+  #pricing .pricing-card {
+    height: 27em;
+    width: 17em;
   }
 }
 #get-in-touch {
@@ -1309,110 +1422,6 @@ article {
   font-size: 0.9em;
 }
 
-.grid {
-  width: 70%;
-  margin-top: 3.3em;
-}
-
-.grid-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  min-width: 20%;
-  max-width: 28%;
-  position: relative;
-}
-.grid-item img {
-  width: 100%;
-}
-
-.grid-item-6 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
-.grid-item-9 {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.grid-hover-box {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  background: red;
-  height: 90%;
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: all 0.2s ease-in-out;
-  padding: 2em;
-  font-family: "Roboto", sans-serif;
-  color: white;
-  cursor: pointer;
-}
-.grid-hover-box:hover {
-  opacity: 0.5;
-}
-.grid-hover-box div {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: left;
-}
-.grid-hover-box .grid-hover-title {
-  font-size: 0.9em;
-  margin-bottom: 0.8em;
-  font-weight: 500;
-}
-.grid-hover-box .grid-hover-subtitle {
-  font-size: 0.7em;
-  font-weight: 300;
-  margin-bottom: 1.2em;
-}
-.grid-hover-box .grid-hover-line {
-  border: none;
-  border-top: 2px solid #c2c2c2;
-  width: 34px;
-}
-
-.grid-img-box {
-  position: relative;
-}
-
-@media (max-width: 768px) {
-  .grid {
-    width: 100%;
-    font-size: 16px;
-  }
-
-  .grid-hover-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
-  .grid-hover-box .grid-hover-title {
-    font-size: 0.8em;
-    margin-bottom: 0.3em;
-  }
-  .grid-hover-box .grid-hover-subtitle {
-    font-size: 0.6em;
-    margin-bottom: 0.3em;
-  }
-}
-@media (max-width: 480px) {
-  .grid {
-    font-size: 10px;
-  }
-}
 .what-we-do-card {
   display: flex;
   justify-content: center;
@@ -1492,6 +1501,11 @@ article {
 @media (max-width: 480px) {
   .what-we-do-card {
     width: 97%;
+    flex-direction: column;
+  }
+  .what-we-do-card .what-card-desc {
+    margin-top: 1.2em;
+    margin-left: 0.5em;
   }
 }
 .section-desc {
@@ -1541,13 +1555,22 @@ article {
 
 .section-desc-center {
   display: flex;
-  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  text-align: center;
 }
 
+@media (max-width: 768px) {
+  .section-desc-center {
+    align-items: center;
+    text-align: center;
+  }
+  .section-desc-center .section-text,
+.section-desc-center .section-white-text {
+    width: 80%;
+  }
+}
 @media (max-width: 480px) {
   .section-desc {
-    font-size: 13px;
+    font-size: 15px;
   }
 }

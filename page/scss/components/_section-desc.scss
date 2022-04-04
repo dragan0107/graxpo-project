@@ -45,12 +45,22 @@
 }
 
 .section-desc-center {
-  @include flex-align-center($direction: column);
-  text-align: center;
+  @include flex-justify-center($direction: column);
 }
 
+@media (max-width: $max-tablets) {
+  .section-desc-center {
+    align-items: center;
+    text-align: center;
+
+    .section-text,
+    .section-white-text {
+      width: 80%;
+    }
+  }
+}
 @media (max-width: $max-mobile) {
   .section-desc {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
