@@ -1,6 +1,6 @@
 #testimonials {
   @include flex-center-all($direction: column);
-  background: url('/page/images/testimonialsBg.png');
+  background: url('../../page/images/testimonialsBg.png');
   background-repeat: no-repeat;
   background-size: cover;
   height: 681px;

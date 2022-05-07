@@ -348,7 +348,7 @@ header nav {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background-image: url("/page/images/numSection.jpg");
+  background-image: url("./../../page/images/numSection.jpg");
   background-size: cover;
   height: 23em;
   color: white;
@@ -645,7 +645,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-image: url("/page/images/buildings.png");
+  background-image: url("../../page/images/buildings.png");
   background-size: cover;
   height: 24.5em;
   color: white;
@@ -832,7 +832,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  background: no-repeat url("/page/images/subscribeBG.png");
+  background: no-repeat url("../../page/images/subscribeBG.png");
   background-size: cover;
   height: 19.125em;
 }
@@ -1002,7 +1002,7 @@ h2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background: url("/page/images/testimonialsBg.png");
+  background: url("../../page/images/testimonialsBg.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 681px;
@@ -1137,7 +1137,7 @@ article {
 }
 
 .blog-card {
-  background: url("/page/images/latest-blog/blog2.png");
+  background: url("../../page/images/latest-blog/blog2.png");
   height: 390px;
   width: 100%;
   position: relative;
@@ -1145,7 +1145,7 @@ article {
 }
 
 .blog-card2 {
-  background: url("/page/images/latest-blog/blog1.png");
+  background: url("../../page/images/latest-blog/blog1.png");
 }
 
 .blog-card,

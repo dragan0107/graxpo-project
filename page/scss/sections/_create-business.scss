@@ -1,6 +1,6 @@
 #create-business {
   @include flex-center-all($direction: column);
-  background-image: url('/page/images/buildings.png');
+  background-image: url('../../page/images/buildings.png');
   background-size: cover;
   height: 24.5em;
   color: white;
