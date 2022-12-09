@@ -1,6 +1,6 @@
 # **Graxpo landing page project.**
 
-## [Click here for demo.](https://drip016.github.io/graxpo-project/page/index.html)
+## [Click here for demo.](https://dragan0107.github.io/graxpo-project/page/index.html)
 
 > ### In this project, I was provided with a full page design in a PSD format, with all the fonts, colors, images and other assets, and my task was to recreate it from scratch.
 
